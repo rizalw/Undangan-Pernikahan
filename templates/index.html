@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Atasnya</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left-lang lang">IN</div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <div class="right-lang lang">EN</div>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <!-- Isinya tulisan undangan pernikahan + foto utama + foto bg + rspv -->
+            <div class="banner-utama">
+                <h1>Undangan Pernikahan</h1>
+                <p>RSVP</p>
+            </div>
+            <div class="isi">
+                <article class="nama-pengantin">
+                    <div class="sambutan-tamu">
+                        <div class="a">Untuk</div>
+                        <div class="b">John Doe</div>
+                        <div class="a">Kami mengundang Anda untuk berbagi dalam kegembiraan kami dan meminta kehadiran Anda di pesta pernikahan</div>
+                    </div>
+                    <div class="detail-nama">
+                        <img src="{{ url_for('static', filename = 'images/wanita.png') }}" alt="foto-pengantin-wanita">
+                        <p class="nama-pengantin-wanita">Innani Choirun Nisa</p>
+                        <p class="keluarga-pengantin-wanita">Putri Bapak Akhmad Saeho, S.E. dan Ibu Luluk Khomsiyah, S.E., M.Si</p>
+                        <p class="c">&</p>
+                        <img src="{{ url_for('static', filename = 'images/pria.png') }}" alt="foto-pengantin-pria">
+                        <p class="nama-pengantin-pria">Gaferi Zaka Wali</p>
+                        <p class="keluarga-pengantin-pria">Putra Bapak Sudarminto, S.Pd., M.Pd. dan Ibu Endang Suliyanti</p>
+                    </div>
+                </article>
+                <article class="tanggal-pernikahan">
+                    <p class="save">Save The Date</p>
+                    <p class="tanggal">23 September 2021</p>
+                    <img src="{{ url_for('static', filename = 'images/Line 1.png') }}" alt="">
+                    <table class="countdown">
+                        <tr class="col-head">
+                            <td>Hari</td>
+                            <td>Jam</td>
+                            <td>Menit</td>
+                            <td>Detik</td>
+                        </tr>
+                        <tr class="col-body">
+                            <td>79</td>
+                            <td>13</td>
+                            <td>11</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    <div class="tambah">
+                        Tambah Jadwal
+                    </div>
+                </article>
+                <article class="foto-pengantin">
+                    <h1>Pict of Us</h1>
+                    <div class="colase-foto"></div>
+                </article>
+                <article class="data-lengkap">
+                    <img src="{{ url_for('static', filename = 'images/Group 5.png') }}" alt="">
+                    <h1>Innani & Gaferi</h1>
+                    <p class="d">Wedding Day</p>
+                    <h3>Kamis,<br>23 September 2021</h3>
+                    <p class="e">Akad Nikah</p>
+                    <p class="f">xx.xx - xx.xx</p>
+                    <div class="lokasi">
+                        <p>Lokasi :</p>
+                        <h4>Ballroom Hotel Tanjung Sari</h4>
+                        <p>Jalan Mawar No.8-10 Penataban,<br>Lingkungan Mojoroto R,<br>Mojopanggung</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.9718887743697!2d114.35370741478087!3d-8.205581094094645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14540ea1f4fb9%3A0xdd33067a79ed7ec0!2sHotel%20Tanjung%20Asri!5e0!3m2!1sid!2sid!4v1626350024378!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </article>
+                <article class="rsvp">
+                    <h1>RSVP</h1>
+                    <p>Apakah anda bersedia hadir?</p>
+                    <div class="bisa">Bisa</div>
+                    <div class="tidak-bisa">Tidak Bisa</div>
+                    <div class="konfirmasi">Konfirmasi</div>
+                </article>
+                <article class="prokes">
+                    <h1>Protokol Kesehatan</h1>
+                    <img src="{{ url_for('static', filename = 'images/Gambar Buat Prokes.png') }}" alt="">
+                </article>
+                <article class="wedding-wish">
+                    <h1>Wedding Wish</h1>
+                    <p>Berikan Harapanmu untuk membuat hari ini semakin meriah</p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tulis harapanmu disini..."></textarea>
+                    <div class="kirim">Kirim</div>
+                    <div class="komentar">
+                        <div class="row">
+                            <div class="nama">Putra Jayanto</div>
+                            <div class="detail">Selamat yaa semuga bahagia</div>
+                            <div class="tanggal-submit">7 Juli 2021, 08.32</div>
+                        </div>
+                        <div class="row">
+                            <div class="nama">Putra Jayanto</div>
+                            <div class="detail">Selamat yaa semuga bahagia</div>
+                            <div class="tanggal-submit">7 Juli 2021, 08.32</div>
+                        </div>
+                        <div class="row">
+                            <div class="nama">Putra Jayanto</div>
+                            <div class="detail">Selamat yaa semuga bahagia</div>
+                            <div class="tanggal-submit">7 Juli 2021, 08.32</div>
+                        </div>
+                        <div class="continue">Lihat ucapan lainnya</div>
+                    </div>
+                </article>
+                <article class="ayat">
+                    <div class="arti-ayat"><i>
+                        "Dan di antara tanda-tanda<br>
+                        (kebesaran)-Nya ialah Dia menciptakan<br>
+                        pasangan-pasangan untukmu dari jenismu<br>
+                        sendiri, agar kamu cenderung dan merasa<br>
+                        tenteram kepadanya, dan Dia menjadikan di<br>
+                        antaramu rasa kasih dan sayang”</i>
+                    </div>
+                    <div class="surat">- Ar Rum 21</div>
+                </article>
+                <article class="penutup">
+                    <div class="pernyataan">
+                        Atas kehadiran dan do’a restu dari bapak/ibu/saudara/I sekalian, kami ucapkan terima kasih<br><br>
+                        Dari kami yang berbahagia
+                    </div>
+                    <div class="ending">Innani & Gaferi</div>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

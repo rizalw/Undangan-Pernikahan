@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0px;
+}
+nav{
+    position: relative;
+}
+.lang{
+    position: fixed;
+}
+.left-lang{
+    top: 62px;
+    right: 178px;
+}
+.right-lang{
+    top: 62px;
+    right: 56px;
+}
+.switch {
+    display: inline-block;
+    width: 85px;
+    height: 35.28px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: fixed;
+    cursor: pointer;
+    width: 85px;
+    height: 35.28px;
+    top: 54.4px;
+    right: 85px;
+    transition: .4s;
+    border: 1px solid black;
+}
+  
+.slider:before {
+    position: fixed;
+    content: "";
+    height: 26px;
+    width: 26px;
+    top: 58.84px;
+    right: 136px;
+    background-color: #000;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+/* input:checked + .slider {
+    background-color: #2196F3;
+} */
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(43px);
+    -ms-transform: translateX(43px);
+    transform: translateX(43px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+/* .banner-utama::before{
+    position: absolute;
+    top: 242px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;    
+} */
+.banner-utama{
+    display: flex;
+    flex-direction: column;
+    background: url(images/banner-bg-effect.png) center top no-repeat, url(images/banner.png) 50% 204px no-repeat, url(images/banner-bg.png) center top no-repeat;
+    background-size: cover, auto, cover;
+}
+.banner-utama h1{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 64px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 54px;
+    padding-top: 54.12px;
+    padding-bottom: 604px;
+}
+.banner-utama p{
+    font-family:'Book Antiqua', serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 14px 38px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    margin-top: 80px;
+    border: 2px solid #AA6730;
+    border-radius: 25px;
+    color: #AA6730;
+    text-align: center;
+    max-width: fit-content;
+}
+.foto-banner{
+    width: 977px;
+    margin: 0 auto;
+}
+.isi{
+    background-image: linear-gradient(white, #FFCE5F, #FFCF60, white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sambutan-tamu{
+    font-family: "Monotype Corsiva", serif;
+    margin: 60px auto 0px auto;
+    max-width: 60%;
+}
+.a, .b{
+    text-align: center;
+    margin: 0px;
+}
+.a{
+    font-size: 42px;
+}
+.b{
+    font-size: 96px;
+}
+.detail-nama{
+    display: flex;
+    flex-direction: column;
+    margin-top: 99px;
+}
+.detail-nama img{
+    width: 420px;
+}
+.detail-nama img, .detail-nama p {
+    margin-left: auto;
+    margin-right: auto;
+}
+.nama-pengantin-wanita, .nama-pengantin-pria{
+    font-family: "Monotype Corsiva", serif;
+    margin-top: 60px;
+    font-size: 72px;
+}
+.keluarga-pengantin-wanita, .keluarga-pengantin-pria{
+    font-family: "Book Antiqua", serif;
+    font-size: 24px;
+}
+.c{
+    font-family: "Monotype Corsiva", serif;
+    font-size: 128px;
+    margin: 60px auto;
+}
+.tanggal-pernikahan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 180.86px auto 128px auto;
+}
+.tanggal-pernikahan p, .tanggal-pernikahan tr td{
+    font-family: "Monotype Corsiva", serif;
+    text-align: center;
+}
+.save{
+    font-size: 96px;
+}
+.tanggal{
+    font-size: 36px;
+}
+.tanggal-pernikahan table{
+    margin-top: 76px;
+}
+.countdown{
+    border-spacing: 98px 120px;
+
+}
+.col-head{
+    font-size: 48px;
+}
+.col-body{
+    font-size: 128px;
+}
+.tambah{
+    font-size: 36px; 
+    font-family: "Book Antiqua", serif;
+    font-weight: bold;
+    color: #AA6730;
+    border: 2px solid #AA6730;
+    border-radius: 25px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+}
+.foto-pengantin{
+    display: flex;
+    flex-direction: column;
+    margin: 160px auto;
+}
+.foto-pengantin h1{
+    margin: 0px auto 47px auto;
+    font-family: "Monotype Corsiva", serif;
+    font-size: 96px;
+
+}
+.data-lengkap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+}
+.data-lengkap img{
+    width: 52px;
+    margin: 0px auto 32.65px auto;
+}
+.data-lengkap h1{
+    margin: 0px auto 0px auto;
+    font-family: "Monotype Corsiva", serif;
+    font-size: 96px;
+    font-weight: normal;
+}
+.d{
+    font-family: "Book Antiqua", serif;
+    text-align: center;
+    font-size: 36px;
+}
+.data-lengkap h3{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    font-family: "Book Antiqua", serif;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    padding: 32.07px 0px;
+}
+.data-lengkap .e, .data-lengkap .f, .lokasi{
+    font-family: "Book Antiqua", serif;
+    font-size: 48px;
+    margin: 0px auto;
+}
+.data-lengkap .f{
+    margin-bottom: 64.15px;
+}
+.lokasi{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 160px auto;
+}
+.lokasi > *{
+    text-align: center;
+}
+.lokasi h4{
+    margin: 0px;
+}
+.lokasi iframe{
+    margin: 32.47px auto 0px auto;
+}
+.rsvp{
+    display: flex;
+    flex-direction: column;
+    font-family: "Book Antiqua", serif;
+    margin-bottom: 145.52px;
+}
+.rsvp h1{
+    margin: 0px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+}
+.rsvp p{
+    text-align: center;
+    font-size: 48px;
+}
+.bisa, .tidak-bisa, .konfirmasi{
+    font-size: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+.bisa{
+    background-color: #00FF00;    
+    padding: 10px 125px;
+    margin-bottom: 16px;
+}
+.tidak-bisa{
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 75px;
+    margin-bottom: 90px;
+}
+.konfirmasi{
+    color: #AA6730;
+    font-weight: bold;
+    padding: 10px 67px;
+    border: 2px solid #AA6730;
+}
+.prokes{
+    display: flex;
+    flex-direction: column;
+    font-family: "Book Antiqua", serif;
+}
+.prokes h1{
+    text-align: center;
+    font-size: 72px;
+    margin: 0px;
+}
+.prokes img{
+    width: 974px;
+    margin: 0px auto 162px auto;
+}
+.wedding-wish{
+    display: flex;
+    flex-direction: column;
+    font-family: "Book Antiqua", serif;
+}
+.wedding-wish h1{
+    margin: 0px;
+    font-size: 72px;
+    text-align: center;
+}
+.wedding-wish p{
+    font-size: 36px;
+    text-align: center;
+    margin: 33px auto;
+}
+.wedding-wish textarea{
+    width: 64%;
+    margin: 0px auto;
+}
+.kirim{
+    font-size: 32px;
+    font-weight: bold;
+    color: #AA6730;
+    border: 2px solid #AA6730;
+    width: fit-content;
+    margin: 33px auto;
+    padding: 10px 50px;
+    border-radius: 25px;
+}
+.komentar{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    width: 926px;
+    margin: 0px auto 50px auto;
+}
+.nama, .detail{
+    font-size: 36px;
+}
+.nama{
+    font-weight: bold;
+}
+.tanggal-submit{
+    font-size: 24px;
+}
+.continue{
+    font-size: 32px;
+    color: #AA6730;
+    border: 2px solid #AA6730;
+    width: fit-content;
+    margin: 0px auto;
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+.ayat{
+    display: flex;
+    flex-direction: column;
+    font-family: "Book Antiqua", serif;
+    font-size: 48px;
+}
+.arti-ayat{
+    text-align: center;
+    margin: 160px auto 48px auto;
+}
+.surat{
+    text-align: center;
+    font-weight: bold;
+}
+.penutup{
+    display: flex;
+    flex-direction: column;
+    margin: 160px auto; 
+}
+.pernyataan{
+    font-family: "Book Antiqua", serif;
+    font-size: 48px;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto;
+}
+.ending{
+    font-family: "Monotype Corsiva", serif;
+    color: #AA6730;
+    font-size: 128px;
+    text-align: center;
+    margin-top: 60px;
+}
