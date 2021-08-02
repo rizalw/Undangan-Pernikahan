@@ -422,7 +422,7 @@ input:checked + .slider:before {
     margin: 0px;
 }
 .prokes img{
-    width: 974px;
+    width: 80%;
     margin: 44px auto 0px auto;
 }
 .wedding-wish{
@@ -523,6 +523,171 @@ input:checked + .slider:before {
     font-size: 128px;
     text-align: center;
     margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+    input:checked + .slider:before {
+        transform: translateX(40px);
+    }
+    .lang{
+        font-size: 16px;
+        top: 60px;
+    }
+    .left-lang{
+        right:127px ;
+    }
+    .right-lang{
+        /* aslinya 68px */
+        right: 25px;
+    }
+    .slider{
+        top: 55px;
+        width: 68.29px;
+        height: 28px;
+        right: 53px;
+    }
+    .slider::before{
+        top: 60px;
+        height: 18px;
+        width: 18px;
+        right: 98px;
+    }
+    .banner-utama{
+        background: url(images/banner-bg-effect.png) center / 768px auto no-repeat, url(images/banner.png) 50% 80px / 521px auto no-repeat, url(images/banner-bg.png) center top / 768px auto no-repeat;
+    }
+    .banner-utama h1{
+        padding-bottom: 250px;
+    }
+    .arab{
+        width: 433.83px;
+    }
+    .batas-gambar{
+        width: 356px !important;
+    }
+    .ayat{
+        font-size: 25px;
+    }
+    .a{
+        font-size: 24px;
+    }
+    .b{
+        font-size: 72px;
+    }
+    .tombol-rsvp{
+        padding: 10px 27px;
+        font-size: 24px;
+    }
+    .detail-nama img{
+        width: 262px;
+    }
+    .keluarga-pengantin-pria, .keluarga-pengantin-wanita{
+        font-size: 28px;
+    }
+    .c{
+        font-size: 96px;
+    }
+    .save{
+        font-size: 72px;
+    }
+    .tanggal{
+        font-size: 24px;
+    }
+    .col-head{
+        font-size: 36px;
+    }
+    .col-body{
+        font-size: 84px;
+    }
+    .tambah{
+        padding: 10px 0px;
+    }
+    .tambah a{
+        font-size: 20px;
+    }
+    .foto-pengantin h1{
+        font-size: 96px;
+    }
+    .data-lengkap img{
+        width: 58.48px;
+    }
+    .data-lengkap h1{
+        font-size: 72px;
+    }
+    .data-lengkap p {
+        font-size: 36px;
+    }
+    .data-lengkap h3{
+        font-size: 42px;
+    }
+    .data-lengkap .e, .data-lengkap .f, .lokasi{
+        font-size: 36px;
+    }
+    .rsvp h1{
+        font-size: 48px;
+    }
+    .rsvp p{
+        font-size: 32px;
+    }
+    .bisa a, .tidak-bisa a, .konfirmasi a, .jumlah a{
+        font-size: 28px;
+    }
+    .bisa{
+        padding: 10px 80px;
+    }
+    .tidak-bisa{
+        padding: 10px 30px;
+    }
+    .konfirmasi{
+        padding: 10px 20px;
+    }
+    .jumlah{
+        width: 80%;
+    }
+    .mid{
+        width: 213px;
+        height: 63px;
+    }
+    .mid p{
+        margin-top: 7%;
+    }
+    .left, .right{
+        width: 75px;
+        height: 63px;
+    }
+    .left p, .right p {
+        margin-top: 15%;
+    }
+    iframe{
+        width: 80%;
+    }
+    .prokes h1{
+        font-size: 48px;
+    }
+    .wedding-wish h1{
+        font-style: 64px;
+    }
+    .wedding-wish p{
+        font-size: 20px;
+    }
+    .kirim{
+        font-size: 24px;
+        padding: 10px 30px;
+    }
+    .nama, .detail{
+        font-size: 24px;
+    }
+    .tanggal-submit{
+        font-size: 16px;
+    }
+    .continue{
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    .pernyataan{
+        font-size: 36px;
+    }
+    .ending{
+        font-size: 84px;
+    }
 }
 @media screen and (max-width: 426px) {
     input:checked + .slider:before {
@@ -695,9 +860,6 @@ input:checked + .slider:before {
     }
     .prokes h1{
         font-size: 32px;
-    }
-    .prokes img{
-        width: 361.03px;
     }
     .pernyataan{
         font-size: 24px;
