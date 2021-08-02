@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nama Atasnya</title>
+    <title>Undangan Pernikahan</title>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
 </head>
 <body>
@@ -23,23 +23,42 @@
             <!-- Isinya tulisan undangan pernikahan + foto utama + foto bg + rspv -->
             <div class="banner-utama">
                 <h1>Undangan Pernikahan</h1>
-                <p>RSVP</p>
             </div>
             <div class="isi">
+                <article class="ayat">
+                    <img src="{{ url_for('static', filename = 'images/arab.png') }}" class="arab" alt="">
+                    <div class="arti-ayat"><i>
+                        "Dan di antara tanda-tanda<br>
+                        (kebesaran)-Nya ialah Dia menciptakan<br>
+                        pasangan-pasangan untukmu dari jenismu<br>
+                        sendiri, agar kamu cenderung dan merasa<br>
+                        tenteram kepadanya, dan Dia menjadikan di<br>
+                        antaramu rasa kasih dan sayang”</i>
+                    </div>
+                    <div class="surat">- Ar Rum 21</div>
+                </article>
+                <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 <article class="nama-pengantin">
                     <div class="sambutan-tamu">
                         <div class="a">Untuk</div>
                         <div class="b">John Doe</div>
-                        <div class="a">Kami mengundang Anda untuk berbagi dalam kegembiraan kami dan meminta kehadiran Anda di pesta pernikahan</div>
+                        <div class="a last">Kami mengundang Anda untuk berbagi dalam kegembiraan kami dan meminta kehadiran Anda di pesta pernikahan</div>
+                        <div class="tombol-rsvp">
+                            RSVP
+                        </div>
+                        <div>
+                            <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
+                        </div>
                     </div>
                     <div class="detail-nama">
                         <img src="{{ url_for('static', filename = 'images/wanita.png') }}" alt="foto-pengantin-wanita">
                         <p class="nama-pengantin-wanita">Innani Choirun Nisa</p>
-                        <p class="keluarga-pengantin-wanita">Putri Bapak Akhmad Saeho, S.E. dan Ibu Luluk Khomsiyah, S.E., M.Si</p>
+                        <p class="keluarga-pengantin-wanita">Putri dari<br>Bapak Akhmad Saeho, S.E.<br>dan<br>Luluk Khomsiyah, S.E., M.Si</p>
                         <p class="c">&</p>
                         <img src="{{ url_for('static', filename = 'images/pria.png') }}" alt="foto-pengantin-pria">
                         <p class="nama-pengantin-pria">Gaferi Zaka Wali</p>
-                        <p class="keluarga-pengantin-pria">Putra Bapak Sudarminto, S.Pd., M.Pd. dan Ibu Endang Suliyanti</p>
+                        <p class="keluarga-pengantin-pria">Putra dari<br>Bapak Sudarminto, S.Pd., M.Pd.<br>dan<br>Ibu Endang Suliyanti</p>
+                        <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                     </div>
                 </article>
                 <article class="tanggal-pernikahan">
@@ -61,8 +80,9 @@
                         </tr>
                     </table>
                     <div class="tambah">
-                        Tambah Jadwal
+                        <a href="#" onclick="">Tambah Jadwal</a>
                     </div>
+                    <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
                 <article class="foto-pengantin">
                     <h1>Pict of Us</h1>
@@ -80,21 +100,29 @@
                         <h4>Ballroom Hotel Tanjung Sari</h4>
                         <p>Jalan Mawar No.8-10 Penataban,<br>Lingkungan Mojoroto R,<br>Mojopanggung</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.9718887743697!2d114.35370741478087!3d-8.205581094094645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14540ea1f4fb9%3A0xdd33067a79ed7ec0!2sHotel%20Tanjung%20Asri!5e0!3m2!1sid!2sid!4v1626350024378!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                     </div>
                 </article>
                 <article class="rsvp">
                     <h1>RSVP</h1>
                     <p>Apakah anda bersedia hadir?</p>
-                    <div class="bisa">Bisa</div>
-                    <div class="tidak-bisa">Tidak Bisa</div>
-                    <div class="konfirmasi">Konfirmasi</div>
+                    <div class="bisa"><a href="#">Bisa</a></div>
+                    <div class="tidak-bisa"><a href="#">Tidak Bisa</a></div>
+                    <div class="jumlah">
+                        <div class="left"><p>-</p></div>
+                        <div class="mid"><p>1</p></div>
+                        <div class="right"><p>+</p></div>
+                    </div>
+                    <div class="konfirmasi"><a href="#">Konfirmasi</a></div>
+                    <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
                 <article class="prokes">
                     <h1>Protokol Kesehatan</h1>
                     <img src="{{ url_for('static', filename = 'images/Gambar Buat Prokes.png') }}" alt="">
+                    <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
                 <article class="wedding-wish">
-                    <h1>Wedding Wish</h1>
+                    <h1 class="g">Wedding Wish</h1>
                     <p>Berikan Harapanmu untuk membuat hari ini semakin meriah</p>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Tulis harapanmu disini..."></textarea>
                     <div class="kirim">Kirim</div>
@@ -116,18 +144,9 @@
                         </div>
                         <div class="continue">Lihat ucapan lainnya</div>
                     </div>
+                    <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
-                <article class="ayat">
-                    <div class="arti-ayat"><i>
-                        "Dan di antara tanda-tanda<br>
-                        (kebesaran)-Nya ialah Dia menciptakan<br>
-                        pasangan-pasangan untukmu dari jenismu<br>
-                        sendiri, agar kamu cenderung dan merasa<br>
-                        tenteram kepadanya, dan Dia menjadikan di<br>
-                        antaramu rasa kasih dan sayang”</i>
-                    </div>
-                    <div class="surat">- Ar Rum 21</div>
-                </article>
+                
                 <article class="penutup">
                     <div class="pernyataan">
                         Atas kehadiran dan do’a restu dari bapak/ibu/saudara/I sekalian, kami ucapkan terima kasih<br><br>

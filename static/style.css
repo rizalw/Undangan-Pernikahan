@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap');
 
 body{
     margin: 0px;
@@ -9,6 +10,9 @@ body{
 }
 p{
     margin: 0px;
+}
+a{
+    text-decoration: none;
 }
 nav{
     position: relative;
@@ -95,45 +99,37 @@ input:checked + .slider:before {
 .banner-utama{
     display: flex;
     flex-direction: column;
-    background: url(images/banner-bg-effect.png) center top no-repeat, url(images/banner.png) 50% 204px no-repeat, url(images/banner-bg.png) center top no-repeat;
+    background: url(images/banner-bg-effect.png) center no-repeat, url(images/banner.png) 50% 204px no-repeat, url(images/banner-bg.png) center top no-repeat;
     background-size: cover, auto, cover;
 }
 .banner-utama h1{
-    font-family: 'Abhaya Libre', serif;
-    font-size: 64px;
+    font-family: 'Montserrat', serif;
+    font-size: 56px;
     text-align: center;
-    font-weight: normal;
+    font-weight: medium;
     margin-bottom: 54px;
     padding-top: 54.12px;
     padding-bottom: 604px;
-}
-.banner-utama p{
-    font-family:'Book Antiqua', serif;
-    font-size: 36px;
-    font-weight: bold;
-    padding: 14px 38px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 8px;
-    margin-top: 80px;
-    border: 2px solid #AA6730;
-    border-radius: 25px;
-    color: #AA6730;
-    text-align: center;
-    max-width: fit-content;
 }
 .foto-banner{
     width: 977px;
     margin: 0 auto;
 }
 .isi{
-    background-image: linear-gradient(white, #FFCE5F, #FFCF60, white);
+    background-image: linear-gradient(white,#9ed8ee, white);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.arab{
+    width: 829.94px;
+    margin: 25px auto 0px auto;
+}
+.batas-gambar{
+    width: 738px !important; 
+    margin: 0px auto 0px auto;
+}
 .sambutan-tamu{
-    font-family: "Monotype Corsiva", serif;
     margin: 60px auto 0px auto;
     max-width: 60%;
 }
@@ -142,10 +138,23 @@ input:checked + .slider:before {
     margin: 0px;
 }
 .a{
+    font-family: "Montserrat", serif;
     font-size: 42px;
+    font-style: italic;
 }
 .b{
-    font-size: 96px;
+    font-family: 'Great Vibes', serif;
+    font-size: 128px;
+}
+.tombol-rsvp{
+    text-align: center;
+    padding: 13px 37px 13px 38px;
+    border: 4px solid #4682B4;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 45px auto 45px auto;
+    font-family: "Montserrat", serif;
+    font-size: 36px;
 }
 .detail-nama{
     display: flex;
@@ -160,16 +169,20 @@ input:checked + .slider:before {
     margin-right: auto;
 }
 .nama-pengantin-wanita, .nama-pengantin-pria{
-    font-family: "Monotype Corsiva", serif;
+    font-family: "Great Vibes", serif;
     margin-top: 60px;
     font-size: 72px;
 }
 .keluarga-pengantin-wanita, .keluarga-pengantin-pria{
-    font-family: "Book Antiqua", serif;
+    font-family: "Montserrat", serif;
     font-size: 24px;
+    text-align: center;
+}
+.keluarga-pengantin-pria{
+    margin-bottom: 45px;
 }
 .c{
-    font-family: "Monotype Corsiva", serif;
+    font-family: "Great Vibes", serif;
     font-size: 128px;
     margin: 60px auto;
 }
@@ -181,21 +194,27 @@ input:checked + .slider:before {
     margin: 180.86px auto 128px auto;
 }
 .tanggal-pernikahan p, .tanggal-pernikahan tr td{
-    font-family: "Monotype Corsiva", serif;
     text-align: center;
 }
+.tanggal-pernikahan tr td{
+    font-family: "Montserrat", serif;
+}
 .save{
+    font-family: "Great Vibes", serif;
     font-size: 96px;
 }
 .tanggal{
+    font-family: "Montserrat", serif;
     font-size: 36px;
 }
 .tanggal-pernikahan table{
     margin-top: 76px;
 }
 .countdown{
-    border-spacing: 98px 120px;
-
+    table-layout: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .col-head{
     font-size: 48px;
@@ -204,16 +223,25 @@ input:checked + .slider:before {
     font-size: 128px;
 }
 .tambah{
-    font-size: 36px; 
-    font-family: "Book Antiqua", serif;
-    font-weight: bold;
-    color: #AA6730;
-    border: 2px solid #AA6730;
+    border: 4px solid #4682B4;
     border-radius: 25px;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 30px;
+    margin: 56px auto 45px auto;
+}
+.tambah a{
+    font-size: 36px; 
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    color: #4682B4;
+    padding: 20px 30px;
+}
+.tambah a:hover{
+    color: white;
+}
+.tambah:hover{
+    cursor: pointer;
+    background-color: #4682B4;
+    transition: 0.5s;
 }
 .foto-pengantin{
     display: flex;
@@ -222,8 +250,9 @@ input:checked + .slider:before {
 }
 .foto-pengantin h1{
     margin: 0px auto 47px auto;
-    font-family: "Monotype Corsiva", serif;
+    font-family: "Great Vibes", serif;
     font-size: 96px;
+    font-weight: normal;
 
 }
 .data-lengkap{
@@ -238,26 +267,26 @@ input:checked + .slider:before {
 }
 .data-lengkap h1{
     margin: 0px auto 0px auto;
-    font-family: "Monotype Corsiva", serif;
+    font-family: "Great Vibes", serif;
     font-size: 96px;
     font-weight: normal;
 }
 .d{
-    font-family: "Book Antiqua", serif;
+    font-family: "Montserrat", serif;
     text-align: center;
     font-size: 36px;
 }
 .data-lengkap h3{
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    font-family: "Book Antiqua", serif;
+    font-family: "Montserrat", serif;
     font-size: 64px;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     padding: 32.07px 0px;
 }
 .data-lengkap .e, .data-lengkap .f, .lokasi{
-    font-family: "Book Antiqua", serif;
+    font-family: "Montserrat", serif;
     font-size: 48px;
     margin: 0px auto;
 }
@@ -276,12 +305,12 @@ input:checked + .slider:before {
     margin: 0px;
 }
 .lokasi iframe{
-    margin: 32.47px auto 0px auto;
+    margin: 32.47px auto 45px auto;
 }
 .rsvp{
     display: flex;
     flex-direction: column;
-    font-family: "Book Antiqua", serif;
+    font-family: "Montserrat", serif;
     margin-bottom: 145.52px;
 }
 .rsvp h1{
@@ -294,33 +323,96 @@ input:checked + .slider:before {
     text-align: center;
     font-size: 48px;
 }
-.bisa, .tidak-bisa, .konfirmasi{
+.bisa, .tidak-bisa, .konfirmasi, .jumlah{
     font-size: 36px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
 }
+.bisa a, .tidak-bisa a, .konfirmasi a{
+    font-size: 36px;
+}
 .bisa{
-    background-color: #00FF00;    
     padding: 10px 125px;
     margin-bottom: 16px;
+    background-color: #5AA469;    
+}
+.bisa a{
+    color: white;
 }
 .tidak-bisa{
-    background-color: #FF0000;
-    color: white;
     padding: 10px 75px;
     margin-bottom: 90px;
+    background-color: #F46060;
+}
+.tidak-bisa a{
+    color: white;
+}
+.konfirmasi a{
+    color: #4682B4;
+    font-weight: bold;
 }
 .konfirmasi{
-    color: #AA6730;
-    font-weight: bold;
     padding: 10px 67px;
-    border: 2px solid #AA6730;
+    border: 4px solid #4682B4;
+    margin-bottom: 45px;
+}
+.jumlah{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.jumlah div > * {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+.mid{
+    width: 299px;
+    height: 75px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0px 14px;
+}
+.left, .right{
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 25px;
+}
+.mid p{
+    margin-top: 5%;
+}
+.left p, .right p{
+    margin-top: 20%;
+}
+/* .jumlah{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.jumlah p{
+    background-color: white;
+    border-radius: 25px;
+    font-size: 36px;
+}
+.left, .right{
+    width: 75px;
+    height: 75px;
+}
+.jumlah .mid{
+    margin: 0px 14px;
+    padding: 10px 140px;
+} */
+.mid{
+    font-family:'Book Antiqua', serif;
 }
 .prokes{
     display: flex;
     flex-direction: column;
-    font-family: "Book Antiqua", serif;
+    font-family: "Montserrat", serif;
 }
 .prokes h1{
     text-align: center;
@@ -329,12 +421,16 @@ input:checked + .slider:before {
 }
 .prokes img{
     width: 974px;
-    margin: 0px auto 162px auto;
+    margin: 44px auto 0px auto;
 }
 .wedding-wish{
     display: flex;
     flex-direction: column;
-    font-family: "Book Antiqua", serif;
+    font-family: "Montserrat", serif;
+    margin-top: 175px;
+}
+.g{
+    font-family: "Great Vibes", serif;
 }
 .wedding-wish h1{
     margin: 0px;
@@ -353,8 +449,8 @@ input:checked + .slider:before {
 .kirim{
     font-size: 32px;
     font-weight: bold;
-    color: #AA6730;
-    border: 2px solid #AA6730;
+    color: #4682B4;
+    border: 4px solid #4682B4;
     width: fit-content;
     margin: 33px auto;
     padding: 10px 50px;
@@ -363,9 +459,10 @@ input:checked + .slider:before {
 .komentar{
     display: flex;
     flex-direction: column;
+    margin-bottom: 45px;
 }
 .row{
-    width: 926px;
+    width: 80%;
     margin: 0px auto 50px auto;
 }
 .nama, .detail{
@@ -379,8 +476,8 @@ input:checked + .slider:before {
 }
 .continue{
     font-size: 32px;
-    color: #AA6730;
-    border: 2px solid #AA6730;
+    color: #4682B4;
+    border: 4px solid #4682B4;
     width: fit-content;
     margin: 0px auto;
     padding: 10px 40px;
@@ -389,12 +486,14 @@ input:checked + .slider:before {
 .ayat{
     display: flex;
     flex-direction: column;
-    font-family: "Book Antiqua", serif;
-    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    margin-bottom: 45px;
 }
 .arti-ayat{
     text-align: center;
-    margin: 160px auto 48px auto;
+    margin: 30px auto 48px auto;
+    width: 65%;
 }
 .surat{
     text-align: center;
@@ -406,16 +505,28 @@ input:checked + .slider:before {
     margin: 160px auto; 
 }
 .pernyataan{
-    font-family: "Book Antiqua", serif;
+    font-family: "Montserrat", serif;
     font-size: 48px;
     text-align: center;
     width: 60%;
     margin: 0px auto;
 }
 .ending{
-    font-family: "Monotype Corsiva", serif;
-    color: #AA6730;
+    font-family: "Great Vibes", serif;
+    color: #4682B4;
     font-size: 128px;
     text-align: center;
     margin-top: 60px;
+}
+@media screen and (max-width: 426px) {
+    .prokes img{
+        width: 425px;
+    }
+    .pernyataan{
+        font-size: 24px;
+        width: 80%;
+    }
+    .ending{
+        font-size: 48px;
+    }
 }
