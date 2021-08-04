@@ -2,7 +2,6 @@ const CACHE_KEY = "language_history";
 
 function changeLanguage(){
     let lang = localStorage.getItem(CACHE_KEY);
-    console.log(lang)
     if (lang === "IN"){
         data = document.querySelector(".arti-ayat")
         data2 = document.querySelector(".a")
@@ -24,6 +23,7 @@ function changeLanguage(){
         data19 = document.querySelector(".data-lengkap > h3")
         data20 = document.querySelector(".tanggal")
         data21 = document.querySelector(".kirim")
+        data22 = document.querySelector(".pesan")
         // fotoprokes = document.querySelector(".prokes > img")
         data.innerHTML = '<i>"Dan di antara tanda-tanda<br>(kebesaran)-Nya ialah Dia menciptakan<br>pasangan-pasangan untukmu dari jenismu<br>sendiri, agar kamu cenderung dan merasa<br>tenteram kepadanya, dan Dia menjadikan di<br>antaramu rasa kasih dan sayang”</i>';
         data2.innerHTML = "Kepada Yth."
@@ -45,6 +45,7 @@ function changeLanguage(){
         data19.innerHTML = "Kamis,<br>23 September 2021"
         data20.innerHTML = "23 September 2021"
         data21.innerHTML = "Kirim"
+        data22.innerHTML = "Terima kasih sudah melakukan konfirmasi.<br>Kami tunggu kehadirannya :)"
         // fotoprokes.setAttribute("src", "")
     } else if (lang === "EN"){
         data = document.querySelector(".arti-ayat")
@@ -67,6 +68,7 @@ function changeLanguage(){
         data19 = document.querySelector(".data-lengkap > h3")
         data20 = document.querySelector(".tanggal")
         data21 = document.querySelector(".kirim")
+        data22 = document.querySelector(".pesan")
         data.innerHTML = '<i>"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought."</i>';
         data2.innerHTML = "For"
         data4.innerHTML = "We invite you to share in our joy and request your presence at the wedding of"
@@ -87,6 +89,7 @@ function changeLanguage(){
         data19.innerHTML = "Thursday,<br>23rd September 2021"
         data20.innerHTML = "23rd September 2021"
         data21.innerHTML = "Send"
+        data22.innerHTML = "Thank you for confirming.<br>We look forward to welcoming you :)"
     }
 }
 
@@ -117,5 +120,79 @@ function setLanguage(){
         localStorage.setItem(CACHE_KEY, "EN");
     }
     changeLanguage()
+}
+
+function bisa(){
+    let data = document.querySelector(".jumlah")
+    let data2 = document.querySelector(".bisa")
+    let data3 = document.querySelector(".tidak-bisa")
+    let data4 = document.querySelector(".konfirmasi > a")
+    data.style.display = "flex";
+    data2.style.opacity = "1";
+    data3.style.opacity = "0.25";
+}
+function tidakBisa(){
+    let data = document.querySelector(".bisa")
+    let data2 = document.querySelector(".tidak-bisa")
+    let data3 = document.querySelector(".jumlah")
+    data.style.opacity = "0.25";
+    data2.style.opacity = "1";
+    data3.style.display = "none"
+}
+
+function kurang(){
+    let data = document.querySelector(".mid > p")
+    let nilai = Number(data.textContent)
+    if (nilai === 2){
+        nilai -= 1
+    }
+    data.innerHTML = String(nilai)
+}
+
+function tambah(){
+    let data = document.querySelector(".mid > p")
+    let nilai = Number(data.textContent)
+    if (nilai === 1){
+        nilai += 1
+    }
+    data.innerHTML = String(nilai)
+}
+
+function confirm(){
+    let data3 = document.querySelector(".konfirmasi > a")
+    let lang = localStorage.getItem(CACHE_KEY)
+    let kiri = document.querySelector(".bisa")
+    let kanan = document.querySelector(".tidak-bisa")
+    let data2 = document.querySelector(".konfirmasi")
+    let pesan = document.querySelector(".pesan")
+    let jumlah = document.querySelector(".jumlah")
+    if (data3.textContent === "Konfirmasi" || data3.textContent === "Confirm"){
+        if (kiri.style.opacity === ""){
+            return ""
+        }
+        data2.style.background = "#4682B4" 
+        data3.style.color = "#ffff" 
+        if (lang === 'IN'){
+            data3.innerHTML = "Ubah"
+        } else {
+            data3.innerHTML = "Change"
+        }
+        jumlah.style.display = "none";
+        kiri.style.display = "none";
+        kanan.style.display = "none";
+        pesan.style.display = "block";
+    } else {
+        data2.style.background = "none" 
+        data3.style.color = "#4682B4" 
+        pesan.style.display = "none";
+        jumlah.style.display = "flex";
+        kiri.style.display = "flex";
+        kanan.style.display = "flex";
+        if (lang === 'IN'){
+            data3.innerHTML = "Konfirmasi"
+        } else {
+            data3.innerHTML = "Confirm"
+        }
+    }
 }
 putHistory();

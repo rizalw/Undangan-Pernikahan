@@ -96,14 +96,15 @@
                 <article class="rsvp">
                     <h1>RSVP</h1>
                     <p class = "i"></p>
-                    <div class="bisa"><a href="#"></a></div>
-                    <div class="tidak-bisa"><a href="#"></a></div>
+                    <div class="pesan"></div>
+                    <div class="bisa"><a href="javascript:void();" onclick="bisa()"></a></div>
+                    <div class="tidak-bisa"><a href="javascript:void();" onclick="tidakBisa()"></a></div>
                     <div class="jumlah">
-                        <div class="left"><p>-</p></div>
+                        <div class="left"><a href="javascript:void()" onclick="kurang()"><p>-</p></a></div>
                         <div class="mid"><p>1</p></div>
-                        <div class="right"><p>+</p></div>
+                        <div class="right"><a href="javascript:void()" onclick="tambah()"><p>+</p></a></div>
                     </div>
-                    <div class="konfirmasi"><a href="#"></a></div>
+                    <div class="konfirmasi"><a href="javascript:void();" onclick="confirm()"></a></div>
                     <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
                 <article class="prokes">

@@ -327,6 +327,14 @@ input:checked + .slider:before {
     font-size: 48px;
     margin-bottom: 32.29px;
 }
+.pesan{
+    display: none;
+    width: 60%;
+    font-family: "Montserrat", serif;
+    font-size: 56px;
+    text-align: center;
+    margin: 0px auto 90px auto;
+}
 .bisa, .tidak-bisa, .konfirmasi, .jumlah{
     font-size: 36px;
     margin-left: auto;
@@ -346,7 +354,7 @@ input:checked + .slider:before {
 }
 .tidak-bisa{
     padding: 10px 75px;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
     background-color: #F46060;
 }
 .tidak-bisa a{
@@ -363,7 +371,7 @@ input:checked + .slider:before {
 }
 .jumlah{
     width: 50%;
-    display: flex;
+    display: none;
     justify-content: center;
     margin-bottom: 30px;
     align-items: center;
@@ -389,8 +397,9 @@ input:checked + .slider:before {
 .mid p{
     margin-top: 5%;
 }
-.left p, .right p{
-    margin-top: 20%;
+.left a p, .right a p{
+    color: black;
+    margin-top: 10%;
 }
 /* .jumlah{
     display: flex;
@@ -631,6 +640,9 @@ input:checked + .slider:before {
     .rsvp p{
         font-size: 32px;
     }
+    .pesan{
+        font-size: 32px;
+    }
     .bisa a, .tidak-bisa a, .konfirmasi a, .jumlah a{
         font-size: 28px;
     }
@@ -657,7 +669,7 @@ input:checked + .slider:before {
         width: 75px;
         height: 63px;
     }
-    .left p, .right p {
+    .left a p, .right a p{
         margin-top: 15%;
     }
     iframe{
@@ -813,6 +825,10 @@ input:checked + .slider:before {
     .rsvp p{
         font-size: 24px;
         margin-bottom: 23.39px;
+    }
+    .pesan{
+        font-size: 20px;
+        margin-bottom: 60px;
     }
     .bisa, .tidak-bisa{
         display: flex;
