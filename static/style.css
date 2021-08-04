@@ -97,7 +97,9 @@ input:checked + .slider:before {
 .banner-utama{
     display: flex;
     flex-direction: column;
-    background: url(images/banner-bg-effect.png) center no-repeat, url(images/banner.png) 50% 204px no-repeat, url(images/banner-bg.png) center top no-repeat;
+    background: url(images/banner-bg-effect.png) center no-repeat, 
+                url(images/banner.png) 50% 204px no-repeat, 
+                url(images/banner-bg.png) center top no-repeat;
     background-size: cover, auto, cover;
 }
 .banner-utama h1{
@@ -120,11 +122,11 @@ input:checked + .slider:before {
     justify-content: center;
 }
 .arab{
-    width: 829.94px;
+    width: 60%;
     margin: 25px auto 0px auto;
 }
 .batas-gambar{
-    width: 738px !important; 
+    width: 60% !important; 
     margin: 0px auto 0px auto;
 }
 .sambutan-tamu{
@@ -552,17 +554,19 @@ input:checked + .slider:before {
         right: 98px;
     }
     .banner-utama{
-        background: url(images/banner-bg-effect.png) center / 768px auto no-repeat, url(images/banner.png) 50% 80px / 521px auto no-repeat, url(images/banner-bg.png) center top / 768px auto no-repeat;
+        background: url(images/banner-bg-effect.png) center / 768px auto no-repeat, 
+                    url(images/banner.png) 50% 80px / 521px auto no-repeat, 
+                    url(images/banner-bg.png) center top / 768px auto no-repeat;
     }
     .banner-utama h1{
         padding-bottom: 250px;
     }
     .arab{
-        width: 433.83px;
+        width: 80%;
     }
-    .batas-gambar{
+    /* .batas-gambar{
         width: 356px !important;
-    }
+    } */
     .ayat{
         font-size: 25px;
     }
@@ -717,13 +721,15 @@ input:checked + .slider:before {
         right: 49px;
     }
     .banner-utama{
-        background: url(images/banner-bg-effect.png) center / 424px auto no-repeat, url(images/banner.png) 50% 50px / 324px auto no-repeat, url(images/banner-bg.png) center top / 424px auto no-repeat;
+        background: url(images/banner-bg-effect.png) center / 424px auto no-repeat, 
+        url(images/banner.png) 50% 50px / 324px auto no-repeat, 
+        url(images/banner-bg.png) center top / 424px auto no-repeat;
     }
     .banner-utama h1{
         padding-bottom: 120px;
     }
     .arab{
-        width: 325.79px;
+        width: 90%;
     }
     .arti-ayat{
         width: 90%;
@@ -737,9 +743,9 @@ input:checked + .slider:before {
     .b{
         font-size: 56px;
     }
-    .batas-gambar{
+    /* .batas-gambar{
         width: 216px !important;
-    }
+    } */
     .tombol-rsvp{
         font-size: 20px;
     }
