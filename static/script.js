@@ -24,6 +24,7 @@ function changeLanguage(){
         data20 = document.querySelector(".tanggal")
         data21 = document.querySelector(".kirim")
         data22 = document.querySelector(".pesan")
+        data23 = document.querySelector(".pesan.tidak")
         // fotoprokes = document.querySelector(".prokes > img")
         data.innerHTML = '<i>"Dan di antara tanda-tanda<br>(kebesaran)-Nya ialah Dia menciptakan<br>pasangan-pasangan untukmu dari jenismu<br>sendiri, agar kamu cenderung dan merasa<br>tenteram kepadanya, dan Dia menjadikan di<br>antaramu rasa kasih dan sayang”</i>';
         data2.innerHTML = "Kepada Yth."
@@ -46,6 +47,7 @@ function changeLanguage(){
         data20.innerHTML = "23 September 2021"
         data21.innerHTML = "Kirim"
         data22.innerHTML = "Terima kasih sudah melakukan konfirmasi.<br>Kami tunggu kehadirannya :)"
+        data23.innerHTML = "Tidak apa-apa jika tidak bisa hadir, kami minta doa dan harapannya agar semua berjalan lancar"
         // fotoprokes.setAttribute("src", "")
     } else if (lang === "EN"){
         data = document.querySelector(".arti-ayat")
@@ -69,6 +71,7 @@ function changeLanguage(){
         data20 = document.querySelector(".tanggal")
         data21 = document.querySelector(".kirim")
         data22 = document.querySelector(".pesan")
+        data23 = document.querySelector(".pesan.tidak")
         data.innerHTML = '<i>"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought."</i>';
         data2.innerHTML = "For"
         data4.innerHTML = "We invite you to share in our joy and request your presence at the wedding of"
@@ -90,6 +93,7 @@ function changeLanguage(){
         data20.innerHTML = "23rd September 2021"
         data21.innerHTML = "Send"
         data22.innerHTML = "Thank you for confirming.<br>We look forward to welcoming you :)"
+        data23.innerHTML = "It's okay if you can't attend, we ask for your prayers and hopes so that everything goes smoothly"
     }
 }
 
@@ -164,7 +168,8 @@ function confirm(){
     let kiri = document.querySelector(".bisa")
     let kanan = document.querySelector(".tidak-bisa")
     let data2 = document.querySelector(".konfirmasi")
-    let pesan = document.querySelector(".pesan")
+    let pesan = document.querySelector(".pesan.hadir")
+    let tidakDatang = document.querySelector(".pesan.tidak")
     let jumlah = document.querySelector(".jumlah")
     if (data3.textContent === "Konfirmasi" || data3.textContent === "Confirm"){
         if (kiri.style.opacity === ""){
@@ -180,7 +185,11 @@ function confirm(){
         jumlah.style.display = "none";
         kiri.style.display = "none";
         kanan.style.display = "none";
-        pesan.style.display = "block";
+        if (kiri.style.opacity === "1"){
+            pesan.style.display = "block";
+        } else {
+            tidakDatang.style.display = "block";
+        }
     } else {
         data2.style.background = "none" 
         data3.style.color = "#4682B4" 

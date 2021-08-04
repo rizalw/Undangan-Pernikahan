@@ -96,7 +96,8 @@
                 <article class="rsvp">
                     <h1>RSVP</h1>
                     <p class = "i"></p>
-                    <div class="pesan"></div>
+                    <div class="pesan hadir"></div>
+                    <div class="pesan tidak"></div>
                     <div class="bisa"><a href="javascript:void();" onclick="bisa()"></a></div>
                     <div class="tidak-bisa"><a href="javascript:void();" onclick="tidakBisa()"></a></div>
                     <div class="jumlah">
@@ -107,6 +108,13 @@
                     <div class="konfirmasi"><a href="javascript:void();" onclick="confirm()"></a></div>
                     <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
+                <div class="overlay">
+                    <a href="javascript:void()"><img src="{{ url_for('static', filename = 'images/x-sign.png') }}" alt="gambarx" class="gambar-x"></a>
+                    <div class="detail-overlay">
+                        Tanpa mengurangi rasa hormat, doa dan support dapat diberikan dalam bentuk dana ke rekening berikut :
+                    </div>
+                    <div class="nama-rekening">Innani Choirun Nisa<br>0295277930<br>BNI</div>
+                </div>
                 <article class="prokes">
                     <h1></h1>
                     <img src="{{ url_for('static', filename = 'images/Gambar Buat Prokes.png') }}" alt="">
