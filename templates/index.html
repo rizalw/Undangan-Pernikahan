@@ -12,7 +12,7 @@
         <nav>
             <div class="left-lang lang">IN</div>
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" onclick="setLanguage()">
                 <span class="slider round"></span>
             </label>
             <div class="right-lang lang">EN</div>
@@ -27,22 +27,16 @@
             <div class="isi">
                 <article class="ayat">
                     <img src="{{ url_for('static', filename = 'images/arab.png') }}" class="arab" alt="">
-                    <div class="arti-ayat"><i>
-                        "Dan di antara tanda-tanda<br>
-                        (kebesaran)-Nya ialah Dia menciptakan<br>
-                        pasangan-pasangan untukmu dari jenismu<br>
-                        sendiri, agar kamu cenderung dan merasa<br>
-                        tenteram kepadanya, dan Dia menjadikan di<br>
-                        antaramu rasa kasih dan sayang”</i>
+                    <div class="arti-ayat">
                     </div>
                     <div class="surat">- Ar Rum 21</div>
                 </article>
                 <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 <article class="nama-pengantin">
                     <div class="sambutan-tamu">
-                        <div class="a">Kepada Yth.</div>
+                        <div class="a"></div>
                         <div class="b">John Doe</div>
-                        <div class="a last">Kami mengundang Anda untuk berbagi dalam kegembiraan kami dan meminta kehadiran Anda di pesta pernikahan</div>
+                        <div class="a last"></div>
                         <div class="tombol-rsvp">
                             RSVP
                         </div>
@@ -53,24 +47,20 @@
                     <div class="detail-nama">
                         <img src="{{ url_for('static', filename = 'images/wanita.png') }}" alt="foto-pengantin-wanita">
                         <p class="nama-pengantin-wanita">Innani Choirun Nisa</p>
-                        <p class="keluarga-pengantin-wanita">Putri dari<br>Bapak Akhmad Saeho, S.E.<br>dan<br>Luluk Khomsiyah, S.E., M.Si</p>
+                        <p class="keluarga-pengantin-wanita"></p>
                         <p class="c">&</p>
                         <img src="{{ url_for('static', filename = 'images/pria.png') }}" alt="foto-pengantin-pria">
                         <p class="nama-pengantin-pria">Gaferi Zaka Wali</p>
-                        <p class="keluarga-pengantin-pria">Putra dari<br>Bapak Sudarminto, S.Pd., M.Pd.<br>dan<br>Ibu Endang Suliyanti</p>
+                        <p class="keluarga-pengantin-pria"></p>
                         <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                     </div>
                 </article>
                 <article class="tanggal-pernikahan">
                     <p class="save">Save The Date</p>
-                    <p class="tanggal">23 September 2021</p>
+                    <p class="tanggal"></p>
                     <img src="{{ url_for('static', filename = 'images/Line 1.png') }}" alt="">
                     <table class="countdown">
                         <tr class="col-head">
-                            <td>Hari</td>
-                            <td>Jam</td>
-                            <td>Menit</td>
-                            <td>Detik</td>
                         </tr>
                         <tr class="col-body">
                             <td>79</td>
@@ -80,7 +70,7 @@
                         </tr>
                     </table>
                     <div class="tambah">
-                        <a href="#" onclick="">Tambah Jadwal</a>
+                        <a href="#" onclick="" class="tambah-jadwal"></a>
                     </div>
                     <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
@@ -92,11 +82,11 @@
                     <img src="{{ url_for('static', filename = 'images/Group 5.png') }}" alt="">
                     <h1>Innani & Gaferi</h1>
                     <p class="d">Wedding Day</p>
-                    <h3>Kamis,<br>23 September 2021</h3>
-                    <p class="e">Akad Nikah</p>
+                    <h3></h3>
+                    <p class="e"></p>
                     <p class="f">xx.xx - xx.xx</p>
                     <div class="lokasi">
-                        <p>Lokasi :</p>
+                        <p class="h"></p>
                         <h4>Ballroom Hotel Tanjung Sari</h4>
                         <p>Jalan Mawar No.8-10 Penataban,<br>Lingkungan Mojoroto R,<br>Mojopanggung</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.9718887743697!2d114.35370741478087!3d-8.205581094094645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14540ea1f4fb9%3A0xdd33067a79ed7ec0!2sHotel%20Tanjung%20Asri!5e0!3m2!1sid!2sid!4v1626350024378!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -105,27 +95,27 @@
                 </article>
                 <article class="rsvp">
                     <h1>RSVP</h1>
-                    <p>Apakah anda bersedia hadir?</p>
-                    <div class="bisa"><a href="#">Bisa</a></div>
-                    <div class="tidak-bisa"><a href="#">Tidak Bisa</a></div>
+                    <p class = "i"></p>
+                    <div class="bisa"><a href="#"></a></div>
+                    <div class="tidak-bisa"><a href="#"></a></div>
                     <div class="jumlah">
                         <div class="left"><p>-</p></div>
                         <div class="mid"><p>1</p></div>
                         <div class="right"><p>+</p></div>
                     </div>
-                    <div class="konfirmasi"><a href="#">Konfirmasi</a></div>
+                    <div class="konfirmasi"><a href="#"></a></div>
                     <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
                 <article class="prokes">
-                    <h1>Protokol Kesehatan</h1>
+                    <h1></h1>
                     <img src="{{ url_for('static', filename = 'images/Gambar Buat Prokes.png') }}" alt="">
                     <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
                 <article class="wedding-wish">
                     <h1 class="g">Wedding Wish</h1>
-                    <p>Berikan Harapanmu untuk membuat hari ini semakin meriah</p>
+                    <p></p>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Tulis harapanmu disini..."></textarea>
-                    <div class="kirim">Kirim</div>
+                    <div class="kirim"></div>
                     <div class="komentar">
                         <div class="row">
                             <div class="nama">Putra Jayanto</div>
@@ -142,20 +132,19 @@
                             <div class="detail">Selamat yaa semuga bahagia</div>
                             <div class="tanggal-submit">7 Juli 2021, 08.32</div>
                         </div>
-                        <div class="continue">Lihat ucapan lainnya</div>
+                        <div class="continue"></div>
                     </div>
                     <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
                 
                 <article class="penutup">
                     <div class="pernyataan">
-                        Atas kehadiran dan do’a restu dari bapak/ibu/saudara/I sekalian, kami ucapkan terima kasih<br><br>
-                        Dari kami yang berbahagia
                     </div>
                     <div class="ending">Innani & Gaferi</div>
                 </article>
             </div>
         </div>
     </main>
+    <script src="{{ url_for('static', filename = 'script.js') }}"></script>
 </body>
 </html>

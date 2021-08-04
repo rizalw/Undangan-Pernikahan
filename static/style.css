@@ -792,6 +792,9 @@ input:checked + .slider:before {
     .data-lengkap h1{
         font-size: 48px;
     }
+    .data-lengkap p {
+        font-size: 24px;
+    }
     .data-lengkap h3{
         font-size: 28px;
     }
