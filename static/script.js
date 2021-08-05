@@ -134,6 +134,8 @@ function bisa(){
     data.style.display = "flex";
     data2.style.opacity = "1";
     data3.style.opacity = "0.25";
+    data4.target = "_blank"
+    data4.href = "/download"
 }
 function tidakBisa(){
     let data = document.querySelector(".bisa")
@@ -203,6 +205,8 @@ function confirm(){
         data2.style.background = "none" 
         data3.style.color = "#4682B4" 
         kiri.style.display = "flex";
+        kiri.style.opacity = "1"
+        kanan.style.opacity = "1"
         kanan.style.display = "flex";
         jumlah.style.display = "flex";
 
@@ -211,13 +215,17 @@ function confirm(){
         } else {
             data3.innerHTML = "Confirm"
         }
-        
-        if (pesan.style.display != "none"){
+        console.log(tidakDatang.style.display)
+        //Ngecek apakah kondisinya abis mencet bisa atau tidak bisa
+        if (pesan.style.display === "block"){
+            data3.target = ""
+            data3.href = "javascript:void()"
             pesan.style.display = "none";
         }
-        else if(tidakDatang.style.display != "none"){
+        else if(tidakDatang.style.display === "block"){
             tidakDatang.style.display = "none";
         }
+
     }
 }
 
