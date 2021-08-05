@@ -18,6 +18,14 @@
             <div class="right-lang lang">EN</div>
         </nav>
     </header>
+    <img src="{{ url_for('static', filename = 'images/Very_Black_screen.jpg') }}" alt="" class="overlay-bg">
+    <div class="overlay">
+        <a href="javascript:void()" onclick="closeOverlay()"><img src="{{ url_for('static', filename = 'images/x-sign.png') }}" alt="gambarx" class="gambar-x"></a>
+        <div class="detail-overlay">
+            Tanpa mengurangi rasa hormat, doa dan support dapat diberikan dalam bentuk dana ke rekening berikut :
+        </div>
+        <div class="nama-rekening">Innani Choirun Nisa<br>0295277930<br>BNI</div>
+    </div>
     <main>
         <div class="content">
             <!-- Isinya tulisan undangan pernikahan + foto utama + foto bg + rspv -->
@@ -108,13 +116,6 @@
                     <div class="konfirmasi"><a href="javascript:void();" onclick="confirm()"></a></div>
                     <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
-                <div class="overlay">
-                    <a href="javascript:void()"><img src="{{ url_for('static', filename = 'images/x-sign.png') }}" alt="gambarx" class="gambar-x"></a>
-                    <div class="detail-overlay">
-                        Tanpa mengurangi rasa hormat, doa dan support dapat diberikan dalam bentuk dana ke rekening berikut :
-                    </div>
-                    <div class="nama-rekening">Innani Choirun Nisa<br>0295277930<br>BNI</div>
-                </div>
                 <article class="prokes">
                     <h1></h1>
                     <img src="{{ url_for('static', filename = 'images/Gambar Buat Prokes.png') }}" alt="">

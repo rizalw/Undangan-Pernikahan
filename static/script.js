@@ -171,7 +171,9 @@ function confirm(){
     let pesan = document.querySelector(".pesan.hadir")
     let tidakDatang = document.querySelector(".pesan.tidak")
     let jumlah = document.querySelector(".jumlah")
+    // ngecek apa udah mencet tombol konfirmasi atau belum
     if (data3.textContent === "Konfirmasi" || data3.textContent === "Confirm"){
+        // ngecek apa udah mencet tombol bisa (otomatis tombol belum bisa juga belum dipencet)
         if (kiri.style.opacity === ""){
             return ""
         }
@@ -185,23 +187,45 @@ function confirm(){
         jumlah.style.display = "none";
         kiri.style.display = "none";
         kanan.style.display = "none";
+        //ngecek yang dipencet apa bisa atau tidak bisa
         if (kiri.style.opacity === "1"){
             pesan.style.display = "block";
         } else {
+            let overlay = document.querySelector(".overlay")
+            let overlaybg = document.querySelector(".overlay-bg")
             tidakDatang.style.display = "block";
+            // overlay.style.setProperty('display', 'flex', 'important');
+            overlaybg.style.display = "block";
+            overlay.style.display = "flex";
         }
+    //ketika tombolnya adalah ubah
     } else {
         data2.style.background = "none" 
         data3.style.color = "#4682B4" 
-        pesan.style.display = "none";
-        jumlah.style.display = "flex";
         kiri.style.display = "flex";
         kanan.style.display = "flex";
+        jumlah.style.display = "flex";
+
         if (lang === 'IN'){
             data3.innerHTML = "Konfirmasi"
         } else {
             data3.innerHTML = "Confirm"
         }
+        
+        if (pesan.style.display != "none"){
+            pesan.style.display = "none";
+        }
+        else if(tidakDatang.style.display != "none"){
+            tidakDatang.style.display = "none";
+        }
     }
 }
+
+function closeOverlay(){
+    let overlay = document.querySelector(".overlay")
+    let overlaybg = document.querySelector(".overlay-bg")
+    overlay.style.display = "none";
+    overlaybg.style.display = "none";
+}
+
 putHistory();
