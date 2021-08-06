@@ -17,6 +17,97 @@ a{
 nav{
     position: relative;
 }
+header{
+    position: fixed;
+    top: 9;
+    z-index: 10;
+}
+.overlay-bg{
+    display: none;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.overlay{
+    display: none;
+    z-index: 99;
+    font-family: "Montserrat", serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 640px;
+    height: 450px;
+    margin-top: -250px; /* Negative half of height. */
+    margin-left: -320px; /* Negative half of width. */
+    border: 1px solid #89CFF0;
+    border-radius: 36px;
+    background-color: #89CFF0;
+    flex-direction: column;
+}
+.overlay a{
+    margin-left: auto;
+    padding: 32px 39px 27px 24px;
+}
+.gambar-x{
+    width: 34.67px;
+}
+.detail-overlay{
+    line-height: 1.6;
+    font-size: 24px;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+}
+.nama-rekening{
+    line-height: 1.6;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+}
+.cover-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(images/cover-flower.png) bottom / 100% 55% no-repeat , 
+    #9ED8EE 100% no-repeat; 
+}
+.title{
+    font-family: 'Great Vibes', serif;
+    color: #4682B4;
+    font-size: 128px;
+    margin: 0px auto 90px auto;
+    text-align: center;
+}
+.buka{
+    border: 4px solid #4682B4;    
+    width: fit-content;
+    margin: 0px auto;
+    border-radius: 25px;
+    padding: 10px 50px;
+}
+.buka a{
+    font-family: 'Montserrat', serif;  
+    font-size: 36px;
+    color: #4682B4;
+}
+.buka:hover {
+    background: #4682B4;
+    transition-duration: 0.2s;
+}
+.buka:hover > a{
+    color: white;
+    transition-duration: 0.2s;
+}
 .lang{
     position: fixed;
 }
@@ -49,6 +140,7 @@ nav{
     right: 85px;
     transition: .4s;
     border: 1px solid black;
+    background: white;
 }
   
 .slider:before {
@@ -97,7 +189,7 @@ input:checked + .slider:before {
 .banner-utama{
     display: flex;
     flex-direction: column;
-    background: url(images/banner-bg-effect.png) center no-repeat, 
+    background: url(images/banner-bg-effect.png) 50% 80% no-repeat, 
                 url(images/banner.png) 50% 204px no-repeat, 
                 url(images/banner-bg.png) center top no-repeat;
     background-size: cover, auto, cover;
@@ -540,54 +632,12 @@ input:checked + .slider:before {
     text-align: center;
     margin-top: 60px;
 }
-.overlay-bg{
-    display: none;
-    z-index: 50;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-}
-.overlay{
-    display: none;
-    z-index: 99;
-    font-family: "Montserrat", serif;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 640px;
-    height: 450px;
-    margin-top: -250px; /* Negative half of height. */
-    margin-left: -320px; /* Negative half of width. */
-    border: 1px solid #89CFF0;
-    border-radius: 36px;
-    background-color: #89CFF0;
-    flex-direction: column;
-}
-.overlay a{
-    margin-left: auto;
-    padding: 32px 39px 27px 24px;
-}
-.gambar-x{
-    width: 34.67px;
-}
-.detail-overlay{
-    line-height: 1.6;
-    font-size: 24px;
-    text-align: center;
-    width: 80%;
-    margin: 0px auto;
-}
-.nama-rekening{
-    line-height: 1.6;
-    font-size: 28px;
-    font-weight: bolder;
-    text-align: center;
-}
 
 @media screen and (max-width: 768px) {
+    .cover-page{
+        background: url(images/cover-flower-medium.png) bottom / contain no-repeat , 
+    #9ED8EE 100% no-repeat;
+    }
     input:checked + .slider:before {
         transform: translateX(40px);
     }
@@ -758,6 +808,33 @@ input:checked + .slider:before {
     }
 }
 @media screen and (max-width: 426px) {
+    .gambar-x{
+        width: 21.13px;
+        height: 21.12px;
+    }
+    .overlay a{
+        padding-bottom: 2px;
+    }
+    .overlay{
+        width: 390px;
+        height: fit-content;
+        margin-top: -137.11px;
+        margin-left: -192.11px;
+    }
+    .detail-overlay{
+        font-size: 16px;
+        width: 60%;
+    }
+    .nama-rekening{
+        font-size: 20px;
+        margin-bottom: 42px;
+    }
+    .title{
+        font-size: 72px;
+    }
+    .buka a{
+        font-size: 20px;
+    }
     input:checked + .slider:before {
         transform: translateX(20px);
     }

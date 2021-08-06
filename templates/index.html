@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
 </head>
 <body>
+    <div class="overlay">
+        <a href="javascript:void()" onclick="closeOverlay()"><img src="{{ url_for('static', filename = 'images/x-sign.png') }}" alt="gambarx" class="gambar-x"></a>
+        <div class="detail-overlay"></div>
+        <div class="nama-rekening">Innani Choirun Nisa<br>0295277930<br>BNI</div>
+    </div>
+    <div class="cover-page">
+        <div class="title">
+            Innani<br>&<br>Gaferi
+        </div>
+        <div class="buka">
+            <a href="javascript:void()" onclick="closeCover()"></a>
+        </div>
+    </div>
     <header>
         <nav>
             <div class="left-lang lang">IN</div>
@@ -19,13 +32,6 @@
         </nav>
     </header>
     <img src="{{ url_for('static', filename = 'images/Very_Black_screen.jpg') }}" alt="" class="overlay-bg">
-    <div class="overlay">
-        <a href="javascript:void()" onclick="closeOverlay()"><img src="{{ url_for('static', filename = 'images/x-sign.png') }}" alt="gambarx" class="gambar-x"></a>
-        <div class="detail-overlay">
-            Tanpa mengurangi rasa hormat, doa dan support dapat diberikan dalam bentuk dana ke rekening berikut :
-        </div>
-        <div class="nama-rekening">Innani Choirun Nisa<br>0295277930<br>BNI</div>
-    </div>
     <main>
         <div class="content">
             <!-- Isinya tulisan undangan pernikahan + foto utama + foto bg + rspv -->
