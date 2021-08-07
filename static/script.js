@@ -246,6 +246,8 @@ function closeOverlay(){
 
 function closeCover(){
     let cover = document.querySelector(".cover-page")
+    let music = document.querySelector("#audio")
     cover.style.display = "none"
+    music.play()
 }
 putHistory();
