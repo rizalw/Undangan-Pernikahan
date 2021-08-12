@@ -7,7 +7,7 @@
     <title>Undangan Pernikahan</title>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
 </head>
-<body>
+<body onload="countdown()">
     <div class="overlay">
         <a href="javascript:void()" onclick="closeOverlay()"><img src="{{ url_for('static', filename = 'images/x-sign.png') }}" alt="gambarx" class="gambar-x"></a>
         <div class="detail-overlay"></div>
@@ -77,10 +77,10 @@
                         <tr class="col-head">
                         </tr>
                         <tr class="col-body">
-                            <td>79</td>
-                            <td>13</td>
-                            <td>11</td>
-                            <td>3</td>
+                            <td id="days">79</td>
+                            <td id="hours">13</td>
+                            <td id="mins">11</td>
+                            <td id="secs">3</td>
                         </tr>
                     </table>
                     <div class="tambah">
