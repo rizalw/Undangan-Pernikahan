@@ -235,8 +235,8 @@ input:checked + .slider:before {
     font-style: italic;
 }
 .b{
-    font-family: 'Great Vibes', serif;
-    font-size: 128px;
+    font-family: 'Montserrat', serif;
+    font-size: 96px;
 }
 .tombol-rsvp{
     text-align: center;
@@ -246,9 +246,12 @@ input:checked + .slider:before {
     border-radius: 25px;
     width: fit-content;
     margin: 45px auto 45px auto;
+}
+.tombol-rsvp a{
     font-family: "Montserrat", serif;
     font-size: 36px;
     color: white;
+
 }
 .detail-nama{
     display: flex;
@@ -314,7 +317,7 @@ input:checked + .slider:before {
     font-size: 48px;
 }
 .col-body{
-    font-size: 128px;
+    font-size: 96px;
 }
 .tambah{
     background-color: #4682B4;
@@ -685,7 +688,7 @@ input:checked + .slider:before {
         font-size: 24px;
     }
     .b{
-        font-size: 72px;
+        font-size: 56px;
     }
     .tombol-rsvp{
         padding: 10px 27px;
@@ -710,7 +713,7 @@ input:checked + .slider:before {
         font-size: 36px;
     }
     .col-body{
-        font-size: 84px;
+        font-size: 56px;
     }
     .tambah{
         padding: 10px 0px;
@@ -882,12 +885,12 @@ input:checked + .slider:before {
         font-size: 16px;
     }
     .b{
-        font-size: 56px;
+        font-size: 40px;
     }
     /* .batas-gambar{
         width: 216px !important;
     } */
-    .tombol-rsvp{
+    .tombol-rsvp a{
         font-size: 20px;
     }
     .detail-nama img{
@@ -912,7 +915,7 @@ input:checked + .slider:before {
         font-size: 24px;
     }
     .col-body{
-        font-size: 56px;
+        font-size: 40px;
     }
     .countdown{
         width: 95%;

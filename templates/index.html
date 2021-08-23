@@ -49,10 +49,10 @@
                 <article class="nama-pengantin">
                     <div class="sambutan-tamu">
                         <div class="a"></div>
-                        <div class="b">John Doe</div>
+                        <div class="b">{{data}}</div>
                         <div class="a last"></div>
                         <div class="tombol-rsvp">
-                            RSVP
+                            <a href="#rsvp-toggler">RSVP</a>
                         </div>
                     </div>   
                 </article>
@@ -104,11 +104,11 @@
                         <h4>Ballroom Hotel Tanjung Sari</h4>
                         <p>Jalan Mawar No.8-10 Penataban,<br>Lingkungan Mojoroto R,<br>Mojopanggung</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.9718887743697!2d114.35370741478087!3d-8.205581094094645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14540ea1f4fb9%3A0xdd33067a79ed7ec0!2sHotel%20Tanjung%20Asri!5e0!3m2!1sid!2sid!4v1626350024378!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
+                        <img id="rsvp-toggler" src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                     </div>
                 </article>
                 <article class="rsvp">
-                    <h1>RSVP</h1>
+                    <h1 >RSVP</h1>
                     <p class = "i"></p>
                     <div class="pesan hadir"></div>
                     <div class="pesan tidak"></div>
