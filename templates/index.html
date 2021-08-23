@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename = 'images/favicon.ico') }}" type="image/x-icon">
     <title>Undangan Pernikahan</title>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
 </head>
@@ -13,6 +14,8 @@
         <div class="detail-overlay"></div>
         <div class="nama-rekening">Innani Choirun Nisa<br>0295277930<br>BNI</div>
     </div>
+    {% if overlay is false %}
+    {% else %}
     <div class="cover-page">
         <div class="title">
             Innani<br>&<br>Gaferi
@@ -21,6 +24,7 @@
             <a href="javascript:void()" onclick="closeCover()"></a>
         </div>
     </div>
+        {% endif %}
     <header>
         <nav>
             <div class="left-lang lang">IN</div>
@@ -130,10 +134,19 @@
                 <article class="wedding-wish">
                     <h1 class="g">Wedding Wish</h1>
                     <p></p>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tulis harapanmu disini..."></textarea>
-                    <div class="kirim"></div>
+                    <form action="/submit/{{data}}/{{id}}" method="POST">
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Tulis harapanmu disini..."></textarea>
+                        <input type="submit" value="Send" class="kirim">
+                    </form>
                     <div class="komentar">
+                        {% for komentar in daftar_komentar %}
                         <div class="row">
+                            <div class="nama">{{komentar.author}}</div>
+                            <div class="detail">{{komentar.comment}}</div>
+                            <div class="tanggal-submit">{{komentar.date_created.date()}}</div>
+                        </div>
+                        {% endfor %}
+                        <!-- <div class="row">
                             <div class="nama">Putra Jayanto</div>
                             <div class="detail">Selamat yaa semuga bahagia</div>
                             <div class="tanggal-submit">7 Juli 2021, 08.32</div>
@@ -142,12 +155,7 @@
                             <div class="nama">Putra Jayanto</div>
                             <div class="detail">Selamat yaa semuga bahagia</div>
                             <div class="tanggal-submit">7 Juli 2021, 08.32</div>
-                        </div>
-                        <div class="row">
-                            <div class="nama">Putra Jayanto</div>
-                            <div class="detail">Selamat yaa semuga bahagia</div>
-                            <div class="tanggal-submit">7 Juli 2021, 08.32</div>
-                        </div>
+                        </div> -->
                         <div class="continue"></div>
                     </div>
                     <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">

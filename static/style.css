@@ -560,6 +560,10 @@ input:checked + .slider:before {
     margin: 0px auto;
     border-radius: 16px;
 }
+.wedding-wish form{
+    display: flex;
+    flex-direction: column;
+}
 .kirim{
     font-size: 32px;
     font-weight: bold;
