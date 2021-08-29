@@ -65,7 +65,7 @@ def index():
     try:
         global overlay
         daftar_komentar = komentar.query.order_by(komentar.date_created).all()
-        return render_template("index.html", data = "Nama Pengunjung", id = 0, overlay = overlay, daftar_komentar = daftar_komentar)
+        return render_template("index.html", data = "Anonim", id = 0, overlay = overlay, daftar_komentar = daftar_komentar)
     finally:
         if overlay is False:
             overlay = True

@@ -10,9 +10,28 @@
 </head>
 <body onload="countdown()">
     <div class="overlay">
-        <a href="javascript:void()" onclick="closeOverlay()"><img src="{{ url_for('static', filename = 'images/x-sign.png') }}" alt="gambarx" class="gambar-x"></a>
+        <h1><b>Wedding Gift</b></h1>
+        <p></p>
+        <div class="button-cover" onclick="closeOverlay()">
+            <img src="{{ url_for('static', filename = 'images/gambar_gift.png') }}" alt="">
+            <p>Wedding Gift</p>
+        </div>
+        <!-- 
         <div class="detail-overlay"></div>
-        <div class="nama-rekening">Innani Choirun Nisa<br>0295277930<br>BNI</div>
+        <div class="nama-rekening">Innani Choirun Nisa<br>0295277930<br>BNI</div> -->
+    </div>
+    <div class="next_overlay">
+        <a href="javascript:void()" onclick="closeNextOverlay()"><img src="{{ url_for('static', filename = 'images/x-sign.png') }}" alt="gambarx" class="gambar-x"></a>
+        <h1><b class="kado_online"></b></h1>
+        <div class="detail_second_overlay_1">
+            Innani Choirun Nisa/Gaferi Zaka Wali<br><br>Perumahan Villa Sukowidi Blok K-5, RT.02/ RW.P4, Kel. Klatak  Kec. Kalipuro, Banyuwangi, Jawa Timur
+        </div>
+        <h1><b class="amplop_digital"></b></h1>
+        <div class="detail_second_overlay_2">
+            Bank Negara Indonesia (BNI)<br>Innani Choirun Nisa<br>0295277930
+            <div class="salin_no_rekening">
+            </div>
+        </div>
     </div>
     {% if overlay is false %}
     {% else %}
@@ -76,7 +95,7 @@
                 <article class="tanggal-pernikahan">
                     <p class="save">Save The Date</p>
                     <p class="tanggal"></p>
-                    <img src="{{ url_for('static', filename = 'images/Line 1.png') }}" alt="">
+                    <img src="{{ url_for('static', filename = 'images/Line_1.png') }}" alt="">
                     <table class="countdown">
                         <tr class="col-head">
                         </tr>
@@ -94,10 +113,15 @@
                 </article>
                 <article class="foto-pengantin">
                     <h1>Pict of Us</h1>
-                    <div class="colase-foto"></div>
+                    <div class="colase-foto">
+                        <!-- <img src="{{ url_for('static', filename = 'images/gambar_slide1.png') }}" alt="" class="gambar-slideshow">
+                        <img src="{{ url_for('static', filename = 'images/gambar_slide2.jpg') }}" alt="" class="gambar-slideshow">
+                        <img src="{{ url_for('static', filename = 'images/gambar_slide3.jpg') }}" alt="" class="gambar-slideshow">
+                        <img src="{{ url_for('static', filename = 'images/gambar_slide4.jpg') }}" alt="" class="gambar-slideshow"> -->
+                    </div>
                 </article>
                 <article class="data-lengkap">
-                    <img src="{{ url_for('static', filename = 'images/Group 5.png') }}" alt="">
+                    <img src="{{ url_for('static', filename = 'images/Group_5.png') }}" alt="">
                     <h1>Innani & Gaferi</h1>
                     <p class="d">Wedding Day</p>
                     <h3></h3>
@@ -105,9 +129,8 @@
                     <p class="f">xx.xx - xx.xx</p>
                     <div class="lokasi">
                         <p class="h"></p>
-                        <h4>Ballroom Hotel Tanjung Sari</h4>
-                        <p>Jalan Mawar No.8-10 Penataban,<br>Lingkungan Mojoroto R,<br>Mojopanggung</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.9718887743697!2d114.35370741478087!3d-8.205581094094645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14540ea1f4fb9%3A0xdd33067a79ed7ec0!2sHotel%20Tanjung%20Asri!5e0!3m2!1sid!2sid!4v1626350024378!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <h4>Grand Harvest Resort & Villas</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15838.867404871315!2d107.58602160000001!3d-7.0425241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14e9aa6ca82c7%3A0x5e89a2f28aaa062e!2sGrand%20Harvest%20Resort%20%26%20Villas%2C%20Dusun%20Krajan%2C%20Tamansari%2C%20Licin%2C%20Kabupaten%20Banyuwangi%2C%20Jawa%20Timur%2068454!5e0!3m2!1sid!2sid!4v1630144947457!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         <img id="rsvp-toggler" src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                     </div>
                 </article>
@@ -128,7 +151,7 @@
                 </article>
                 <article class="prokes">
                     <h1></h1>
-                    <img src="{{ url_for('static', filename = 'images/Gambar Buat Prokes.png') }}" alt="">
+                    <img src="{{ url_for('static', filename = 'images/Gambar_Buat_Prokes.png') }}" alt="">
                     <img src="{{ url_for('static', filename = 'images/border-bunga.png') }}" alt="" class="batas-gambar">
                 </article>
                 <article class="wedding-wish">

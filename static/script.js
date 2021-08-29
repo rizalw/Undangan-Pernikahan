@@ -2,32 +2,34 @@ const CACHE_KEY = "language_history";
 
 function changeLanguage(){
     let lang = localStorage.getItem(CACHE_KEY);
+    data = document.querySelector(".arti-ayat")
+    data2 = document.querySelector(".a")
+    data4 = document.querySelector(".a.last")
+    data5 = document.querySelector(".keluarga-pengantin-wanita")
+    data6 = document.querySelector(".keluarga-pengantin-pria")
+    data7 = document.querySelector(".col-head")
+    data8 = document.querySelector(".tambah-jadwal")
+    data9 = document.querySelector(".e")
+    data10 = document.querySelector(".h")
+    data11 = document.querySelector(".i")
+    data12 = document.querySelector(".bisa > a")
+    data13 = document.querySelector(".tidak-bisa > a")
+    data14 = document.querySelector(".konfirmasi > a")
+    data15 = document.querySelector(".prokes > h1")
+    data16 = document.querySelector(".wedding-wish > p")
+    data17 = document.querySelector(".continue")
+    data18 = document.querySelector(".pernyataan")
+    data19 = document.querySelector(".data-lengkap > h3")
+    data20 = document.querySelector(".tanggal")
+    data21 = document.querySelector(".kirim")
+    data22 = document.querySelector(".pesan")
+    data23 = document.querySelector(".pesan.tidak")
+    data24 = document.querySelector(".buka > a")
+    data26 = document.querySelector(".overlay > p")
+    data27 = document.querySelector(".kado_online")
+    data28 = document.querySelector(".amplop_digital")
+    data29 = document.querySelector(".salin_no_rekening")
     if (lang === "IN"){
-        data = document.querySelector(".arti-ayat")
-        data2 = document.querySelector(".a")
-        data4 = document.querySelector(".a.last")
-        data5 = document.querySelector(".keluarga-pengantin-wanita")
-        data6 = document.querySelector(".keluarga-pengantin-pria")
-        data7 = document.querySelector(".col-head")
-        data8 = document.querySelector(".tambah-jadwal")
-        data9 = document.querySelector(".e")
-        data10 = document.querySelector(".h")
-        data11 = document.querySelector(".i")
-        data12 = document.querySelector(".bisa > a")
-        data13 = document.querySelector(".tidak-bisa > a")
-        data14 = document.querySelector(".konfirmasi > a")
-        data15 = document.querySelector(".prokes > h1")
-        data16 = document.querySelector(".wedding-wish > p")
-        data17 = document.querySelector(".continue")
-        data18 = document.querySelector(".pernyataan")
-        data19 = document.querySelector(".data-lengkap > h3")
-        data20 = document.querySelector(".tanggal")
-        data21 = document.querySelector(".kirim")
-        data22 = document.querySelector(".pesan")
-        data23 = document.querySelector(".pesan.tidak")
-        data24 = document.querySelector(".buka > a")
-        data25 = document.querySelector(".detail-overlay")
-        // fotoprokes = document.querySelector(".prokes > img")
         data.innerHTML = '<i>"Dan di antara tanda-tanda<br>(kebesaran)-Nya ialah Dia menciptakan<br>pasangan-pasangan untukmu dari jenismu<br>sendiri, agar kamu cenderung dan merasa<br>tenteram kepadanya, dan Dia menjadikan di<br>antaramu rasa kasih dan sayang”</i>';
         data2.innerHTML = "Kepada Yth."
         data4.innerHTML = "Kami mengundang Anda untuk berbagi dalam kegembiraan kami dan meminta kehadiran Anda di pesta pernikahan"
@@ -37,9 +39,9 @@ function changeLanguage(){
         data8.innerHTML = "Tambah Jadwal"
         data9.innerHTML = "Akad Nikah"
         data10.innerHTML = "Lokasi :"
-        data11.innerHTML = "Apakah anda bersedia hadir?"
-        data12.innerHTML = "Bisa"
-        data13.innerHTML = "Tidak Bisa"
+        data11.innerHTML = "Kami tidak sabar menunggu hari<br>bahagia bersama Bapak/Ibu/Saudara/i.<br>Mohon konfirmasi kehadiran<br>Bapak/Ibu/Saudara/i. Terimakasih"
+        data12.innerHTML = "Ya, saya akan datang"
+        data13.innerHTML = "Maaf saya tidak bisa datang"
         data14.innerHTML = "Konfirmasi"
         data15.innerHTML = "Protokol Kesehatan"
         data16.innerHTML = "Berikan harapanmu untuk membuat hari ini semakin meriah"
@@ -51,33 +53,11 @@ function changeLanguage(){
         data22.innerHTML = "Terima kasih sudah melakukan konfirmasi.<br>Kami tunggu kehadirannya :)"
         data23.innerHTML = "Tidak apa-apa jika tidak bisa hadir, kami minta doa dan harapannya agar semua berjalan lancar"
         data24.innerHTML = "Buka"
-        data25.innerHTML = "Tanpa mengurangi rasa hormat, doa dan support dapat diberikan dalam bentuk dana ke rekening berikut :"
-        // fotoprokes.setAttribute("src", "")
+        data26.innerHTML = "Bagi keluarga dan sahabat yang ingin mengirimkan hadiah, silahkan menekan tombol berikut"
+        data27.innerHTML = "Kado Online"
+        data28.innerHTML = "Amplop Digital"
+        data29.innerHTML = "Salin Nomor Rekening"
     } else if (lang === "EN"){
-        data = document.querySelector(".arti-ayat")
-        data2 = document.querySelector(".a")
-        data4 = document.querySelector(".a.last")
-        data5 = document.querySelector(".keluarga-pengantin-wanita")
-        data6 = document.querySelector(".keluarga-pengantin-pria")
-        data7 = document.querySelector(".col-head")
-        data8 = document.querySelector(".tambah-jadwal")
-        data9 = document.querySelector(".e")
-        data10 = document.querySelector(".h")
-        data11 = document.querySelector(".i")
-        data12 = document.querySelector(".bisa > a")
-        data13 = document.querySelector(".tidak-bisa > a")
-        data14 = document.querySelector(".konfirmasi > a")
-        data15 = document.querySelector(".prokes > h1")
-        data16 = document.querySelector(".wedding-wish > p")
-        data17 = document.querySelector(".continue")
-        data18 = document.querySelector(".pernyataan")
-        data19 = document.querySelector(".data-lengkap > h3")
-        data20 = document.querySelector(".tanggal")
-        data21 = document.querySelector(".kirim")
-        data22 = document.querySelector(".pesan")
-        data23 = document.querySelector(".pesan.tidak")
-        data24 = document.querySelector(".buka > a")
-        data25 = document.querySelector(".detail-overlay")
         data.innerHTML = '<i>"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought."</i>';
         data2.innerHTML = "For"
         data4.innerHTML = "We invite you to share in our joy and request your presence at the wedding of"
@@ -101,7 +81,10 @@ function changeLanguage(){
         data22.innerHTML = "Thank you for confirming.<br>We look forward to welcoming you :)"
         data23.innerHTML = "It's okay if you can't attend, we ask for your prayers and hopes so that everything goes smoothly"
         data24.innerHTML = "Open"
-        data25.innerHTML = "Without reducing respect, prayers and support can be given in the form of funds to the following account :"
+        data26.innerHTML = "For family and friends who want to send gifts, please press the following button:"
+        data27.innerHTML = "Online Gift"
+        data28.innerHTML = "Digital Envelope"
+        data29.innerHTML = "Copy Account Number"
     }
 }
 
@@ -138,12 +121,12 @@ function bisa(){
     let data = document.querySelector(".jumlah")
     let data2 = document.querySelector(".bisa")
     let data3 = document.querySelector(".tidak-bisa")
-    let data4 = document.querySelector(".konfirmasi > a")
+    // let data4 = document.querySelector(".konfirmasi > a")
     data.style.display = "flex";
     data2.style.opacity = "1";
     data3.style.opacity = "0.25";
     data4.target = "_blank"
-    data4.href = "/download"
+    // data4.href = "/download"
 }
 function tidakBisa(){
     let data = document.querySelector(".bisa")
@@ -201,13 +184,13 @@ function confirm(){
         if (kiri.style.opacity === "1"){
             pesan.style.display = "block";
         } else {
-            let overlay = document.querySelector(".overlay")
-            let overlaybg = document.querySelector(".overlay-bg")
             tidakDatang.style.display = "block";
             // overlay.style.setProperty('display', 'flex', 'important');
-            overlaybg.style.display = "block";
-            overlay.style.display = "flex";
         }
+        let overlay = document.querySelector(".overlay")
+        let overlaybg = document.querySelector(".overlay-bg")
+        overlaybg.style.display = "block";
+        overlay.style.display = "flex";
     //ketika tombolnya adalah ubah
     } else {
         data2.style.background = "none" 
@@ -239,9 +222,17 @@ function confirm(){
 
 function closeOverlay(){
     let overlay = document.querySelector(".overlay")
-    let overlaybg = document.querySelector(".overlay-bg")
+    let next_overlay = document.querySelector(".next_overlay")
     overlay.style.display = "none";
+    next_overlay.style.display = "flex";
+}
+
+function closeNextOverlay(){
+    let next_overlay = document.querySelector(".next_overlay")
+    let overlaybg = document.querySelector(".overlay-bg")
     overlaybg.style.display = "none";
+    next_overlay.style.display = "none";
+
 }
 
 function closeCover(){
