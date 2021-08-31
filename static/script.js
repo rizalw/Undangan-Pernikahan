@@ -31,8 +31,8 @@ function changeLanguage(){
     data29 = document.querySelector(".salin_no_rekening")
     if (lang === "IN"){
         data.innerHTML = '<i>"Dan di antara tanda-tanda<br>(kebesaran)-Nya ialah Dia menciptakan<br>pasangan-pasangan untukmu dari jenismu<br>sendiri, agar kamu cenderung dan merasa<br>tenteram kepadanya, dan Dia menjadikan di<br>antaramu rasa kasih dan sayang”</i>';
-        data2.innerHTML = "Kepada Yth."
-        data4.innerHTML = "Kami mengundang Anda untuk berbagi dalam kegembiraan kami dan meminta kehadiran Anda di pesta pernikahan"
+        data2.innerHTML = "Assalamu'alaikum Warahmatullahi Wabarakatuh<br><br>Kepada Yth."
+        data4.innerHTML = "Dengan memohon ridho Allah SWT, kami bermaksud untuk menyelenggarakan acara akad dan resepsi pernikahan kami"
         data5.innerHTML = "Putri dari<br>Bapak Akhmad Saeho, S.E.<br>dan<br>Luluk Khomsiyah, S.E., M.Si"
         data6.innerHTML = "Putra dari<br>Bapak Sudarminto, S.Pd., M.Pd.<br>dan<br>Ibu Endang Suliyanti"
         data7.innerHTML = "<td>Hari</td><td>Jam</td><td>Menit</td><td>Detik</td>"
@@ -44,7 +44,7 @@ function changeLanguage(){
         data13.innerHTML = "Maaf saya tidak bisa datang"
         data14.innerHTML = "Konfirmasi"
         data15.innerHTML = "Protokol Kesehatan"
-        data16.innerHTML = "Berikan harapanmu untuk membuat hari ini semakin meriah"
+        data16.innerHTML = "Mohon doa untuk kedua mempelai"
         data17.innerHTML = "Lihat ucapan lainnya"
         data18.innerHTML = "Atas kehadiran dan do’a restu dari bapak/ibu/saudara/I sekalian, kami ucapkan terima kasih<br><br>Dari kami yang berbahagia"
         data19.innerHTML = "Kamis,<br>23 September 2021"
