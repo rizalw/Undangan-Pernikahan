@@ -21,90 +21,94 @@ class komentar(db.Model):
 
 
 #Guest Data
-tamu_undangan = """KELUARGA BANI HUZAINI	80
-ARSITEKTUR UB 2013	14
-ALL MEMBER BJ 28	168
-DINDA PUTRI & GURUH	40
-FEBY VALENTINA	150
-VINA ALFI M & SUAMI	166
-MELINA PANDAN S	161
-FIDIAH AULIA & SUAMI	83
-KURNIA CAHYA P	197
-REVYANA NAWANG & REZA	166
-ANDREA TYA 	10
-DIASTIKA R & SUAMI	162
-SULIS AGUSTIA & SUAMI	78
-IRA YULIA ASTUTIK & SUAMI	46
-SYAFIRA SALASABILA	4
-FAJAR FURQON	94
-PUSPA NILA CEMPAKA & SUAMI	15
-GABRIELLA S. & SUAMI	66
-YUNISA ROSIYANTO	20
-TRI YUNI & SUAMI	156
-PRATIWI OKTAVIANA & SUAMI	118
-FAHMIA TSANIE & SUAMI	106
-NUR AZLINA	173
-RESTICA	26
-UMAMAH AL BATUL	174
-ALMAS NUGRAHANINGSIH	82
-FARADINA HASAN	80
-ARIDA F YASMIN	10
-SHOFY AFINA	136
-UMI HAJAR KH	175
-MARTHA ANGELIA	121
-DEWI WIDYA 	151
-ROHADATUL AISY	185
-Anggit Teguh Iman	30
-Aji Prisma Arista	172
-Aditya Alfian Noor	150
-Ainul Fahmi	150
-Andreas Bayu Saputra	110
-Ari Sulistyo	85
-Ageng Gesit Putro Panuntun	18
-Bayu Ikhsan Saputra	122
-Bentar Randy	112
-M. Aden Al Barrie	77
-Enggar Tyasto	122
-Habib Syarif Dalimunte	83
-Joko Purnomo	8
-Jundi Izzuddin Alqosam	46
-Leo Saputra	182
-Sandy Janilandra Irawan	82
-Ramadhona Kurniawan	180
-Nurul Efendi	64
-Wicaksono Sambu Wihikan	125
-Wahyu Purba Aji	23
-M. Thorig Algomar	36
-Dian Ardia Rini	97
-Dwika Putra Anugrah	1
-Ardiansyah Selian	23
-M. Chotibul Umam	130
-Ervanda Putra	121
-Faisal Wahyu Hidayat	155
-R. Alvino Putra Yodi Prasetyo	87
-Hadi Susanto	132
-Fajar Nurhadi	53
-Edi Hartono	193
-Muhammad Zakaria	85
-Muhammad Zulkarnain	48
-Aron Dio Sabatino Akimas	61
-Candra Agung Prabowo	129
-Vikri Ari Susanto	107
-Rifki Setiawan	31
-Bass RIFQI Halvyan	200
-Bass Eka Putra adhy Suryanto	39
-M.Eko Pujo Sakti & Istri	67
-Febrian Nuzulul Arsya & Istri	142
-Rifaldi Wahyu Putra	152
-Eka Retno Ardianti	40
-M Fahmi Suyuti	39
-Dinas PU Banyuwangi	125
-Badan Pendapatan Daerah Banyuwangi	112
-Inspektorat Banyuwangi	41
-Keluarga Aseph (9F) 	158
-Vanadia Anisa	156
-Angelia Septa	69
-Rizka Ilmawati	21"""
+tamu_undangan = """KELUARGA BANI HUZAINI	1
+ARSITEKTUR UB 2013	2
+ALL MEMBER BJ 28	3
+DINDA PUTRI & GURUH	4
+FEBY VALENTINA	5
+VINA ALFI M & SUAMI	6
+MELINA PANDAN S	7
+FIDIAH AULIA & SUAMI	8
+KURNIA CAHYA P	9
+REVYANA NAWANG & REZA	10
+ANDREA TYA	11
+DIASTIKA R & SUAMI	12
+SULIS AGUSTIA & SUAMI	13
+IRA YULIA ASTUTIK & SUAMI	14
+SYAFIRA SALASABILA	15
+FAJAR FURQON	16
+PUSPA NILA CEMPAKA & SUAMI	17
+GABRIELLA S. & SUAMI	18
+YUNISA ROSIYANTO	19
+TRI YUNI & SUAMI	20
+PRATIWI OKTAVIANA & SUAMI	21
+FAHMIA TSANIE & SUAMI	22
+NUR AZLINA	23
+RESTICA	24
+UMAMAH AL BATUL	25
+ALMAS NUGRAHANINGSIH	26
+FARADINA HASAN	27
+ARIDA F YASMIN	28
+SHOFY AFINA	29
+UMI HAJAR KH	30
+MARTHA ANGELIA	31
+DEWI WIDYA	32
+ROHADATUL AISY	33
+Anggit Teguh Iman	34
+Aji Prisma Arista	35
+Aditya Alfian Noor	36
+Ainul Fahmi	37
+Andreas Bayu Saputra	38
+Ari Sulistyo	39
+Ageng Gesit Putro Panuntun	40
+Bayu Ikhsan Saputra	41
+Bentar Randy	42
+M. Aden Al Barrie	43
+Enggar Tyasto	44
+Habib Syarif Dalimunte	45
+Joko Purnomo	46
+Jundi Izzuddin Alqosam	47
+Leo Saputra	48
+Sandy Janilandra Irawan	49
+Ramadhona Kurniawan	50
+Nurul Efendi	51
+Wicaksono Sambu Wihikan	52
+Wahyu Purba Aji	53
+M. Thorig Algomar	54
+Dian Ardia Rini	55
+Dwika Putra Anugrah	56
+Ardiansyah Selian	57
+M. Chotibul Umam	58
+Ervanda Putra	59
+Faisal Wahyu Hidayat	60
+R. Alvino Putra Yodi Prasetyo	61
+Hadi Susanto	62
+Fajar Nurhadi	63
+Edi Hartono	64
+Muhammad Zakaria	65
+Muhammad Zulkarnain	66
+Aron Dio Sabatino Akimas	67
+Candra Agung Prabowo	68
+Vikri Ari Susanto	69
+Rifki Setiawan	70
+Bass RIFQI Halvyan	71
+Bass Eka Putra adhy Suryanto	72
+M.Eko Pujo Sakti & Istri	73
+Febrian Nuzulul Arsya & Istri	74
+Rifaldi Wahyu Putra	75
+Eka Retno Ardianti	76
+M Fahmi Suyuti	77
+Dinas PU Banyuwangi	78
+Badan Pendapatan Daerah Banyuwangi	79
+Inspektorat Banyuwangi	80
+Keluarga Aseph (9F)	81
+Vanadia Anisa	82
+Angelia Septa	83
+Rizka Ilmawati	84
+Teknika 02	85
+Keluarga Polimarin Jawa Timur	86
+Keluarga Polimarin Banyuwangi	87
+Alumni Polimarin 02	88"""
 
 def get_keys(tamu_undangan, id):
     data = tamu_undangan.split("\n")

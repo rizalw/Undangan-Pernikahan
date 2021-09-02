@@ -273,3 +273,9 @@ function countdown(){
     }, 1000);
 }
 putHistory();
+
+// bakal muncul kalo ada yang komentar
+next_ucapan = document.querySelector(".komentar")
+if (next_ucapan.childElementCount < 2){
+    next_ucapan.style.display = "none";
+}
