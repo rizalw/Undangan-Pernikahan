@@ -121,12 +121,12 @@ function bisa(){
     let data = document.querySelector(".jumlah")
     let data2 = document.querySelector(".bisa")
     let data3 = document.querySelector(".tidak-bisa")
-    // let data4 = document.querySelector(".konfirmasi > a")
+    let data4 = document.querySelector(".konfirmasi > a")
     data.style.display = "flex";
     data2.style.opacity = "1";
     data3.style.opacity = "0.25";
     data4.target = "_blank"
-    // data4.href = "/download"
+    data4.href = "/download"
 }
 function tidakBisa(){
     let data = document.querySelector(".bisa")
@@ -185,12 +185,11 @@ function confirm(){
             pesan.style.display = "block";
         } else {
             tidakDatang.style.display = "block";
-            // overlay.style.setProperty('display', 'flex', 'important');
+            let overlay = document.querySelector(".overlay")
+            let overlaybg = document.querySelector(".overlay-bg")
+            overlaybg.style.display = "block";
+            overlay.style.display = "flex";
         }
-        let overlay = document.querySelector(".overlay")
-        let overlaybg = document.querySelector(".overlay-bg")
-        overlaybg.style.display = "block";
-        overlay.style.display = "flex";
     //ketika tombolnya adalah ubah
     } else {
         data2.style.background = "none" 

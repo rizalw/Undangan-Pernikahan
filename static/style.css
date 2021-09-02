@@ -159,7 +159,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 5;
+    z-index: 9;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -375,7 +375,7 @@ input:checked + .slider:before {
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    margin: 180.86px auto 128px auto;
+    margin: 180.86px auto 0px auto;
 }
 .tanggal-pernikahan p, .tanggal-pernikahan tr td{
     text-align: center;
@@ -727,6 +727,88 @@ input:checked + .slider:before {
     margin-top: 60px;
 }
 
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+.card {
+  position: relative;
+  
+  width: 400px;
+  height: 540px;
+  overflow: hidden;
+
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Light blue cover above the slide show*/
+.card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(140, 22, 115, 0.2);
+}
+
+.card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+  transform: translateX( 400px );
+  background-image: url("images/gambar_slide1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+
+
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url("images/gambar_slide2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation-delay: 7s;
+}
+
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url("images/gambar_slide3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation-delay: 14s;
+}
+
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url("images/gambar_slide4.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation-delay: 21s;
+}
+
+
+@keyframes opaqTransition {
+  3% { transform: translateX( 0 ); }
+  25% { transform: translateX( 0 ); }
+  28% { transform: translateX( -400px ); }
+  100% { transform: translateX( -400px ); }
+}
+
 @media screen and (max-width: 768px) {
     .cover-page{
         background: url(images/cover-flower-medium.png) bottom / contain no-repeat , 
@@ -902,6 +984,19 @@ input:checked + .slider:before {
     }
 }
 @media screen and (max-width: 426px) {
+    .card{
+        width: 300px;
+        height: 405px;
+    }
+    .card_part{
+        transform: translateX( 300px );
+    }
+    @keyframes opaqTransition {
+        3% { transform: translateX( 0 ); }
+        25% { transform: translateX( 0 ); }
+        28% { transform: translateX( -300px ); }
+        100% { transform: translateX( -300px ); }
+      }
     .gambar-x{
         width: 21.13px;
         height: 21.12px;
