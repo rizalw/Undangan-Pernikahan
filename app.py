@@ -145,6 +145,8 @@ def personalized_index(id):
         global tamu_undangan
         global overlay
         daftar_komentar = komentar.query.order_by(komentar.date_created).all()
+        # for komen in daftar_komentar:
+        #     komen.author = " ".join(komen.author.split("%20"))
         return render_template("index.html", data = get_keys(tamu_undangan, id), id = id, overlay = overlay, daftar_komentar = daftar_komentar)
     finally:
         if overlay is False:
